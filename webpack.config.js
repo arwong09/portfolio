@@ -1,9 +1,4 @@
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
-const extractSass = new ExtractTextPlugin({
-    filename: '[name].[contenthash].css'
-});
 
 module.exports = {
     entry: './app/index.js',
@@ -13,12 +8,13 @@ module.exports = {
     },
 
     module: {
-        rules: [{
+        loaders: [{
             test: /\.scss$/,
-            loader: 'style-loader!css-loader!sass-loader',
+            loader: 'style-loader!css-loader!sass-loader'
+        }, {
+            test: /\.(png|jpg)$/i,
+            loader: 'file-loader?name=[path][hash].[ext]',
+            include: path.join(__dirname, 'assets/images')
         }]
     },
-    plugins: [
-        extractSass
-    ]
 };

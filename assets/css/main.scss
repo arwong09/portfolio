@@ -50,8 +50,35 @@ html, body {
   }
 }
 
+.nav2 {
+  display: flex;
+  align-items: center;
+  background: $blue;
 
+  &__block {
+    background: $lightblue;
+    padding: 10px 25px 10px 40px;
+    align-items: center;
+    display: inline-flex;
+  }
 
-.nav2__block {
-  background: #01B2FF;
+  &__block2 {
+    padding: 10px 20px 10px 10px;
+    align-items: center;
+    display: inline-flex;
+  }
+
+  &__avatar {
+    border-radius: 3px;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+  }
+
+  &__text {
+    color: #fff;
+    height: 100%;
+    margin-left: 15px;
+    font-size: 16px;
+  }
 }
