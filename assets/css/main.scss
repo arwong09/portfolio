@@ -16,6 +16,11 @@ html, body {
   display: flex;
   align-items: center;
   box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  position: fixed;
+  background: #fff;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 
   &__buttons {
     display: inline-flex;
@@ -62,6 +67,10 @@ html, body {
   align-items: center;
   background: $blue;
   font-size: 13px;
+  position: fixed;
+  top: 60px;
+  width: 100%;
+  z-index: 1000;
 
   &__block {
     background: $lightblue;
@@ -96,4 +105,68 @@ svg {
 svg:hover #Rectangle-2, svg:hover text {
   fill: $lightblue-hl;
   @include transition;
+}
+
+main {
+  padding: 100px 120px;
+}
+
+.app {
+  &__h1 {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $blue;
+    margin: 30px 0;
+  }
+}
+
+.feed {
+  &__item {
+    cursor: pointer;
+    margin-bottom: 40px;
+
+    &:hover &__overlay {
+      // opacity: 0.5;
+      @include transition($duration: 200ms);
+    }
+
+    &:hover &__img-container {
+      filter: brightness(1);
+      background-size: calc(100% + 6px) auto;
+      background-position: -3px -20px;
+      @include transition($duration: 200ms);
+    }
+
+    // &__border {
+    //   padding: 15px;
+    //   border: 1px solid #ccc;
+    // }
+
+    &__h2 {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #777;
+      font-weight: 400;
+      margin: 20px 0 0 0;
+    }
+
+    &__img-container {
+      position: relative;
+      height: 180px;
+      filter: brightness(0.5);
+      // border-radius: 3px;
+      background-size: 100% auto;
+      background-position: 0 -20px;
+    }
+
+    &__overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      background: #000;
+      border-radius: 3px;
+    }
+  }
 }

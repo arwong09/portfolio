@@ -9481,7 +9481,7 @@ exports = module.exports = __webpack_require__(83)();
 
 
 // module
-exports.push([module.i, "html, body {\n  margin: 0;\n  width: 100%;\n  height: 100%;\n  font-family: \"Proxima Nova\", \"Open Sans\", \"Helvetica\", sans-serif; }\n\n* {\n  box-sizing: border-box !important; }\n\n.nav {\n  padding: 10px 40px;\n  display: flex;\n  align-items: center;\n  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }\n  .nav__buttons {\n    display: inline-flex;\n    align-items: center;\n    height: 100%;\n    margin: 0 10px; }\n  .nav__button {\n    width: 120px;\n    text-transform: uppercase;\n    color: #777;\n    text-align: center;\n    font-size: 14px;\n    cursor: pointer; }\n    .nav__button:hover {\n      color: #4A4A4A;\n      transition: 150ms;\n      transition-timing-function: ease-in-out;\n      -webkit-transition: 150ms;\n      -webkit-transition-timing-function: ease-in-out; }\n  .nav__socials {\n    display: inline-flex;\n    align-items: center;\n    margin: 0 10px; }\n  .nav__social {\n    padding: 0 15px;\n    color: #01B2FF;\n    cursor: pointer;\n    font-size: 16px;\n    transition: 150ms;\n    transition-timing-function: ease-in-out;\n    -webkit-transition: 150ms;\n    -webkit-transition-timing-function: ease-in-out; }\n    .nav__social:hover {\n      color: #42D6FF; }\n\n.nav2 {\n  display: flex;\n  align-items: center;\n  background: #4990E2;\n  font-size: 13px; }\n  .nav2__block {\n    background: #01B2FF;\n    padding: 0px 25px 0px 40px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__block2 {\n    padding: 5px 20px 5px 10px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__avatar {\n    width: 40px;\n    height: 40px;\n    margin-right: 15px; }\n  .nav2__text {\n    color: #fff;\n    height: 100%;\n    margin-left: 5px; }\n\nsvg {\n  cursor: pointer; }\n\nsvg:hover #Rectangle-2, svg:hover text {\n  fill: #42D6FF;\n  transition: 150ms;\n  transition-timing-function: ease-in-out;\n  -webkit-transition: 150ms;\n  -webkit-transition-timing-function: ease-in-out; }\n", ""]);
+exports.push([module.i, "html, body {\n  margin: 0;\n  width: 100%;\n  height: 100%;\n  font-family: \"Proxima Nova\", \"Open Sans\", \"Helvetica\", sans-serif; }\n\n* {\n  box-sizing: border-box !important; }\n\n.nav {\n  padding: 10px 40px;\n  display: flex;\n  align-items: center;\n  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  position: fixed;\n  background: #fff;\n  top: 0;\n  width: 100%;\n  z-index: 1000; }\n  .nav__buttons {\n    display: inline-flex;\n    align-items: center;\n    height: 100%;\n    margin: 0 10px; }\n  .nav__button {\n    width: 120px;\n    text-transform: uppercase;\n    color: #777;\n    text-align: center;\n    font-size: 14px;\n    cursor: pointer; }\n    .nav__button:hover {\n      color: #4A4A4A;\n      transition: 150ms;\n      transition-timing-function: ease-in-out;\n      -webkit-transition: 150ms;\n      -webkit-transition-timing-function: ease-in-out; }\n  .nav__socials {\n    display: inline-flex;\n    align-items: center;\n    margin: 0 10px; }\n  .nav__social {\n    padding: 0 15px;\n    color: #01B2FF;\n    cursor: pointer;\n    font-size: 16px;\n    transition: 150ms;\n    transition-timing-function: ease-in-out;\n    -webkit-transition: 150ms;\n    -webkit-transition-timing-function: ease-in-out; }\n    .nav__social:hover {\n      color: #42D6FF; }\n\n.nav2 {\n  display: flex;\n  align-items: center;\n  background: #4990E2;\n  font-size: 13px;\n  position: fixed;\n  top: 60px;\n  width: 100%;\n  z-index: 1000; }\n  .nav2__block {\n    background: #01B2FF;\n    padding: 0px 25px 0px 40px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__block2 {\n    padding: 5px 20px 5px 10px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__avatar {\n    width: 40px;\n    height: 40px;\n    margin-right: 15px; }\n  .nav2__text {\n    color: #fff;\n    height: 100%;\n    margin-left: 5px; }\n\nsvg {\n  cursor: pointer; }\n\nsvg:hover #Rectangle-2, svg:hover text {\n  fill: #42D6FF;\n  transition: 150ms;\n  transition-timing-function: ease-in-out;\n  -webkit-transition: 150ms;\n  -webkit-transition-timing-function: ease-in-out; }\n\nmain {\n  padding: 100px 120px; }\n\n.app__h1 {\n  font-size: 16px;\n  text-transform: uppercase;\n  font-weight: 600;\n  color: #4990E2;\n  margin: 30px 0; }\n\n.feed__item {\n  cursor: pointer;\n  margin-bottom: 40px; }\n  .feed__item:hover .feed__item__overlay {\n    transition: 200ms;\n    transition-timing-function: ease-in-out;\n    -webkit-transition: 200ms;\n    -webkit-transition-timing-function: ease-in-out; }\n  .feed__item:hover .feed__item__img-container {\n    filter: brightness(1);\n    background-size: calc(100% + 6px) auto;\n    background-position: -3px -20px;\n    transition: 200ms;\n    transition-timing-function: ease-in-out;\n    -webkit-transition: 200ms;\n    -webkit-transition-timing-function: ease-in-out; }\n  .feed__item__h2 {\n    font-size: 16px;\n    text-transform: uppercase;\n    color: #777;\n    font-weight: 400;\n    margin: 20px 0 0 0; }\n  .feed__item__img-container {\n    position: relative;\n    height: 180px;\n    filter: brightness(0.5);\n    background-size: 100% auto;\n    background-position: 0 -20px; }\n  .feed__item__overlay {\n    position: absolute;\n    width: 100%;\n    height: 100%;\n    opacity: 0;\n    background: #000;\n    border-radius: 3px; }\n", ""]);
 
 // exports
 
@@ -22031,6 +22031,8 @@ function updateLink(linkElement, obj) {
 "use strict";
 
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _main = __webpack_require__(81);
 
 var _main2 = _interopRequireDefault(_main);
@@ -22045,13 +22047,94 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var test = _react2.default.createElement(
-  'h1',
-  null,
-  'Panoramas'
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Feed = function (_Component) {
+  _inherits(Feed, _Component);
+
+  function Feed(props) {
+    _classCallCheck(this, Feed);
+
+    var _this = _possibleConstructorReturn(this, (Feed.__proto__ || Object.getPrototypeOf(Feed)).call(this, props));
+
+    _this.items = [{
+      name: "Santa Marta",
+      imgPath: "assets/images/santa-marta-c.jpg"
+    }, {
+      name: "Parque Tayrona",
+      imgPath: "assets/images/parque-tayrona-c.jpg"
+    }];
+    return _this;
+  }
+
+  _createClass(Feed, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'feed' },
+        this.items.map(function (item, i) {
+          return _react2.default.createElement(FeedItem, { imgPath: item.imgPath, name: item.name, key: i });
+        })
+      );
+    }
+  }]);
+
+  return Feed;
+}(_react.Component);
+
+var FeedItem = function (_Component2) {
+  _inherits(FeedItem, _Component2);
+
+  function FeedItem(props) {
+    _classCallCheck(this, FeedItem);
+
+    return _possibleConstructorReturn(this, (FeedItem.__proto__ || Object.getPrototypeOf(FeedItem)).call(this, props));
+  }
+
+  _createClass(FeedItem, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'feed__item' },
+        _react2.default.createElement(
+          'div',
+          { className: 'feed__item__border' },
+          _react2.default.createElement(
+            'div',
+            { className: 'feed__item__img-container', style: { backgroundImage: 'url(' + this.props.imgPath + ')' } },
+            _react2.default.createElement('div', { className: 'feed__item__overlay' })
+          )
+        ),
+        _react2.default.createElement(
+          'h2',
+          { className: 'feed__item__h2' },
+          this.props.name
+        )
+      );
+    }
+  }]);
+
+  return FeedItem;
+}(_react.Component);
+
+var App = _react2.default.createElement(
+  'div',
+  { className: 'app' },
+  _react2.default.createElement(
+    'h1',
+    { className: 'app__h1' },
+    'Panoramas'
+  ),
+  _react2.default.createElement(Feed, null)
 );
-_reactDom2.default.render(test, document.getElementById('root'));
-console.log('test');
+
+_reactDom2.default.render(App, document.getElementById('root'));
 
 /***/ })
 /******/ ]);

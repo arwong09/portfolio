@@ -9,9 +9,9 @@ $black: #4A4A4A;
   transform: translateY(-50%);
 }
 
-@mixin transition {
-  transition: 150ms;
+@mixin transition($duration: 150ms) {
+  transition: $duration;
   transition-timing-function: ease-in-out;
-  -webkit-transition: 150ms;
+  -webkit-transition: $duration;
   -webkit-transition-timing-function: ease-in-out;
 }
