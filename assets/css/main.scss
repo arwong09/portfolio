@@ -15,6 +15,7 @@ html, body {
   padding: 10px 40px;
   display: flex;
   align-items: center;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 
   &__buttons {
     display: inline-flex;
@@ -29,6 +30,12 @@ html, body {
     color: #777;
     text-align: center;
     font-size: 14px;
+    cursor: pointer;
+
+    &:hover {
+      color: #4A4A4A;
+      transition: 0.15s;
+    }
   }
 
   &__socials {
@@ -54,22 +61,22 @@ html, body {
   display: flex;
   align-items: center;
   background: $blue;
+  font-size: 13px;
 
   &__block {
     background: $lightblue;
-    padding: 10px 25px 10px 40px;
+    padding: 0px 25px 0px 40px;
     align-items: center;
     display: inline-flex;
   }
 
   &__block2 {
-    padding: 10px 20px 10px 10px;
+    padding: 5px 20px 5px 10px;
     align-items: center;
     display: inline-flex;
   }
 
   &__avatar {
-    border-radius: 3px;
     width: 40px;
     height: 40px;
     margin-right: 15px;
@@ -78,7 +85,6 @@ html, body {
   &__text {
     color: #fff;
     height: 100%;
-    margin-left: 15px;
-    font-size: 16px;
+    margin-left: 5px;
   }
 }
