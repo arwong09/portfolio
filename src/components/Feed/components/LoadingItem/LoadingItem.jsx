@@ -1,6 +1,7 @@
 import style from './loading-item.scss'
 import React, { Component } from 'react'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
+let img = 'dist/' + require('./loading-item.png');
 
 export default class LoadingItem extends Component {
   animate() {
@@ -14,10 +15,10 @@ export default class LoadingItem extends Component {
       <ReactCSSTransitionGroup
         transitionName="loadingItem"
         transitionAppear={true}
-        transitionAppearTimeout={1000}
+        transitionAppearTimeout={500}
         transitionEnterTimeout={500}
         transitionLeaveTimeout={300}>
-        <img ref={(img) => this.img = img} className="feed__loading-item" src="loading-item.png" />
+        <img ref={(img) => this.img = img} className="feed__loading-item" src={img} />
       </ReactCSSTransitionGroup>
     )
   }

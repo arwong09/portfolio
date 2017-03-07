@@ -7,25 +7,19 @@
 
 // ANIMATION
 
-.loadingItem-appear {
+.loadingItem-appear,
+.loadingItem-enter {
   opacity: 0.01;
   transform: translateY(30px);
 }
 
-.loadingItem-appear.loadingItem-appear-active {
+.loadingItem-appear.loadingItem-appear-active,
+.loadingItem-enter.loadingItem-enter-active,
+.loadingItem-animate {
   opacity: 1;
   transform: translateY(0);
   will-change: transform opacity;
-  transition: all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.loadingItem-enter {
-  opacity: 0.01;
-}
-
-.loadingItem-enter.loadingItem-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
+  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .loadingItem-leave {
@@ -35,15 +29,4 @@
 .loadingItem-leave.loadingItem-leave-active {
   opacity: 0.01;
   transition: opacity 300ms ease-in;
-}
-
-
-
-// ANIMATION
-
-.loadingItem-animate {
-  opacity: 1;
-  transform: translateY(0);
-  will-change: transform opacity;
-  transition: all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }

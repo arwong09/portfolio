@@ -15,7 +15,7 @@ export default class FeedItem extends Component {
         <ReactCSSTransitionGroup
         transitionName="item"
         transitionAppear={true}
-        transitionAppearTimeout={1000}
+        transitionAppearTimeout={500}
         transitionEnterTimeout={500}
         transitionLeaveTimeout={300}>
           <div className="feed__item__img" style={{backgroundImage: 'url(' + this.props.imgPath + ')'}}></div>

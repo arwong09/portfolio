@@ -21,8 +21,7 @@ module.exports = {
             exclude: /node_modules/
         }, {
             test: /\.(png|jpg)$/i,
-            loader: 'file-loader?name=[hash].[ext]',
-            include: /components/,
+            loader: 'file-loader?name=/images/[hash].[ext]',
             exclude: /node_modules/
         }]
     }

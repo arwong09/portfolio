@@ -1,4 +1,4 @@
-@import 'src/assets/css/variables';
+@import 'assets/css/variables';
 
 .feed__item {
   cursor: pointer;
@@ -29,25 +29,18 @@
 
 // ANIMATION
 
-.item-appear {
+.item-appear,
+.item-enter {
   opacity: 0.01;
-  transform: translateY(3px);
+  transform: translateY(1px);
 }
 
-.item-appear.item-appear-active {
+.item-appear.item-appear-active,
+.item-enter.item-enter-active {
   opacity: 1;
   transform: translateY(0);
   will-change: transform opacity;
-  transition: all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.item-enter {
-  opacity: 0.01;
-}
-
-.item-enter.item-enter-active {
-  opacity: 1;
-  transition: opacity 1s ease-in;
+  transition: all 500ms ease-in;
 }
 
 .item-leave {
@@ -56,5 +49,5 @@
 
 .item-leave.item-leave-active {
   opacity: 0.01;
-  transition: opacity 3000ms ease-in;
+  transition: opacity 300ms ease-in;
 }
