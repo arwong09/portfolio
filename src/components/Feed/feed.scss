@@ -1,0 +1,43 @@
+@import 'src/assets/css/variables.scss';
+
+// ANIMATION
+
+.loadingItem-appear {
+  opacity: 0.01;
+  transform: translateY(30px);
+}
+
+.loadingItem-appear.loadingItem-appear-active {
+  opacity: 1;
+  transform: translateY(0);
+  will-change: transform opacity;
+  transition: all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.loadingItem-enter {
+  opacity: 0.01;
+}
+
+.loadingItem-enter.loadingItem-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.loadingItem-leave {
+  opacity: 1;
+}
+
+.loadingItem-leave.loadingItem-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+// loadingItem
+
+.loadingItem-animate {
+  opacity: 1;
+  transform: translateY(0);
+  will-change: transform opacity;
+  transition: all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+

@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    entry: './app/index.jsx',
+    entry: './src/index.jsx',
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
@@ -21,8 +21,8 @@ module.exports = {
             exclude: /node_modules/
         }, {
             test: /\.(png|jpg)$/i,
-            loader: 'file-loader?name=[path][hash].[ext]',
-            include: path.join(__dirname, 'assets/images'),
+            loader: 'file-loader?name=[hash].[ext]',
+            include: /components/,
             exclude: /node_modules/
         }]
     }
