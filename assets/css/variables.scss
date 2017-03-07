@@ -15,3 +15,7 @@ $black: #4A4A4A;
   -webkit-transition: $duration;
   -webkit-transition-timing-function: ease-in-out;
 }
+
+.hidden {
+  display: none;
+}
