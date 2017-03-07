@@ -11744,10 +11744,6 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _feed = __webpack_require__(204);
-
-var _feed2 = _interopRequireDefault(_feed);
-
 var _react = __webpack_require__(27);
 
 var _react2 = _interopRequireDefault(_react);
@@ -11784,9 +11780,9 @@ var Feed = function (_Component) {
   _createClass(Feed, [{
     key: 'onLoad',
     value: function onLoad(feedItem) {
-      var newState = this.state.loadedItems;
-      newState.push({ name: feedItem.props.name, imgPath: feedItem.props.imgPath });
-      this.setState({ loadedItems: newState });
+      var updatedItems = this.state.loadedItems;
+      updatedItems.push({ name: feedItem.props.name, imgPath: feedItem.props.imgPath });
+      this.setState({ loadedItems: updatedItems });
       this.loadingItem.animate();
     }
   }, {
@@ -11838,32 +11834,7 @@ var ITEMS = exports.ITEMS = [{
 }];
 
 /***/ }),
-/* 96 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(99);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(33)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./main.scss", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./main.scss");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
+/* 96 */,
 /* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12020,20 +11991,7 @@ var LoadingItem = function (_Component) {
 exports.default = LoadingItem;
 
 /***/ }),
-/* 99 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(28)();
-// imports
-
-
-// module
-exports.push([module.i, ".hidden {\n  display: none; }\n\nhtml, body {\n  margin: 0;\n  width: 100%;\n  height: 100%;\n  font-family: \"Proxima Nova\", \"Open Sans\", \"Helvetica\", sans-serif; }\n\n* {\n  box-sizing: border-box !important; }\n\n.nav {\n  padding: 10px 40px;\n  display: flex;\n  align-items: center;\n  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  position: fixed;\n  background: #fff;\n  top: 0;\n  width: 100%;\n  z-index: 1000; }\n  .nav__buttons {\n    display: inline-flex;\n    align-items: center;\n    height: 100%;\n    margin: 0 10px; }\n  .nav__button {\n    width: 120px;\n    text-transform: uppercase;\n    color: #777;\n    text-align: center;\n    font-size: 14px;\n    cursor: pointer; }\n    .nav__button:hover {\n      color: #4A4A4A;\n      transition: 150ms;\n      transition-timing-function: ease-in;\n      will-change: filter transform;\n      -webkit-transition: 150ms;\n      -webkit-transition-timing-function: ease-in; }\n  .nav__socials {\n    display: inline-flex;\n    align-items: center;\n    margin: 0 10px; }\n  .nav__social {\n    padding: 0 15px;\n    color: #01B2FF;\n    cursor: pointer;\n    font-size: 16px;\n    transition: 150ms;\n    transition-timing-function: ease-in;\n    will-change: filter transform;\n    -webkit-transition: 150ms;\n    -webkit-transition-timing-function: ease-in; }\n    .nav__social:hover {\n      color: #42D6FF; }\n\n.nav2 {\n  display: flex;\n  align-items: center;\n  background: #4990E2;\n  font-size: 13px;\n  position: fixed;\n  top: 60px;\n  width: 100%;\n  z-index: 1000; }\n  .nav2__block {\n    background: #01B2FF;\n    padding: 0px 25px 0px 40px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__block2 {\n    padding: 5px 20px 5px 10px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__avatar {\n    width: 40px;\n    height: 40px;\n    margin-right: 15px; }\n  .nav2__text {\n    color: #fff;\n    height: 100%;\n    margin-left: 5px; }\n\nsvg {\n  cursor: pointer; }\n\nsvg:hover #Rectangle-2, svg:hover text {\n  fill: #42D6FF;\n  transition: 150ms;\n  transition-timing-function: ease-in;\n  will-change: filter transform;\n  -webkit-transition: 150ms;\n  -webkit-transition-timing-function: ease-in; }\n\nmain {\n  padding: 100px 120px; }\n\n.app__h1 {\n  font-size: 16px;\n  text-transform: uppercase;\n  font-weight: 600;\n  color: #4990E2;\n  margin: 30px 0; }\n", ""]);
-
-// exports
-
-
-/***/ }),
+/* 99 */,
 /* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -12042,7 +12000,7 @@ exports = module.exports = __webpack_require__(28)();
 
 
 // module
-exports.push([module.i, ".hidden {\n  display: none; }\n\n.feed__item {\n  cursor: pointer;\n  margin-bottom: 40px; }\n  .feed__item:hover .feed__item__img {\n    filter: brightness(0.6);\n    transition: 200ms;\n    transition-timing-function: ease-in;\n    will-change: filter transform;\n    -webkit-transition: 200ms;\n    -webkit-transition-timing-function: ease-in; }\n  .feed__item__h2 {\n    font-size: 16px;\n    text-transform: uppercase;\n    color: #777;\n    font-weight: 400;\n    margin: 20px 0 0 0; }\n  .feed__item__img {\n    position: relative;\n    height: 180px;\n    width: 100%;\n    filter: brightness(1);\n    background-size: 100% auto;\n    background-position: 0 -20px; }\n\n.item-appear,\n.item-enter {\n  opacity: 0.01;\n  transform: translateY(1px); }\n\n.item-appear.item-appear-active,\n.item-enter.item-enter-active {\n  opacity: 1;\n  transform: translateY(0);\n  will-change: transform opacity;\n  transition: all 500ms ease-in; }\n\n.item-leave {\n  opacity: 1; }\n\n.item-leave.item-leave-active {\n  opacity: 0.01;\n  transition: opacity 300ms ease-in; }\n", ""]);
+exports.push([module.i, ".hidden {\n  display: none; }\n\n.feed__item {\n  cursor: pointer;\n  margin-bottom: 40px; }\n  .feed__item:hover .feed__item__img {\n    filter: brightness(0.6);\n    transition: 200ms;\n    transition-timing-function: ease-in;\n    will-change: filter transform;\n    -webkit-transition: 200ms;\n    -webkit-transition-timing-function: ease-in; }\n  .feed__item__h2 {\n    font-size: 16px;\n    text-transform: uppercase;\n    color: #777;\n    font-weight: 400;\n    margin: 20px 0 0 0; }\n  .feed__item__img {\n    position: relative;\n    height: 180px;\n    width: 100%;\n    filter: brightness(1);\n    background-size: 100% auto;\n    background-position: 0 -20px; }\n\n.item-appear,\n.item-enter {\n  opacity: 0.01;\n  transform: translateY(2px); }\n\n.item-appear.item-appear-active,\n.item-enter.item-enter-active {\n  opacity: 1;\n  transform: translateY(0);\n  will-change: transform opacity;\n  transition: all 500ms ease-in; }\n\n.item-leave {\n  opacity: 1; }\n\n.item-leave.item-leave-active {\n  opacity: 0.01;\n  transition: opacity 300ms ease-in; }\n", ""]);
 
 // exports
 
@@ -12056,26 +12014,13 @@ exports = module.exports = __webpack_require__(28)();
 
 
 // module
-exports.push([module.i, ".feed__loading-item {\n  position: relative;\n  width: 100%;\n  height: 180px;\n  margin-bottom: 37px; }\n\n.loadingItem-appear,\n.loadingItem-enter {\n  opacity: 0.01;\n  transform: translateY(30px); }\n\n.loadingItem-appear.loadingItem-appear-active,\n.loadingItem-enter.loadingItem-enter-active,\n.loadingItem-animate {\n  opacity: 1;\n  transform: translateY(0);\n  will-change: transform opacity;\n  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55); }\n\n.loadingItem-leave {\n  opacity: 1; }\n\n.loadingItem-leave.loadingItem-leave-active {\n  opacity: 0.01;\n  transition: opacity 300ms ease-in; }\n", ""]);
+exports.push([module.i, ".feed__loading-item {\n  position: relative;\n  width: 100%;\n  height: 180px;\n  margin-bottom: 37px;\n  animation: loading 5s infinite;\n  will-change: filter;\n  border-radius: 3px;\n  opacity: 0.7; }\n\n.loadingItem-appear,\n.loadingItem-enter {\n  opacity: 0.01;\n  transform: translateY(30px); }\n\n.loadingItem-appear.loadingItem-appear-active,\n.loadingItem-enter.loadingItem-enter-active,\n.loadingItem-animate {\n  opacity: 1;\n  transform: translateY(0);\n  will-change: transform opacity;\n  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55); }\n\n.loadingItem-leave {\n  opacity: 1; }\n\n.loadingItem-leave.loadingItem-leave-active {\n  opacity: 0.01;\n  transition: opacity 300ms ease-in; }\n\n@keyframes loading {\n  0% {\n    filter: brightness(1); }\n  10% {\n    filter: brightness(0.95); }\n  20% {\n    filter: brightness(1); }\n  30% {\n    filter: brightness(0.95); }\n  40% {\n    filter: brightness(1); }\n  50% {\n    filter: brightness(0.95); }\n  60% {\n    filter: brightness(1); }\n  70% {\n    filter: brightness(0.95); }\n  80% {\n    filter: brightness(1); }\n  90% {\n    filter: brightness(0.95); }\n  100% {\n    filter: brightness(1); } }\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 102 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(28)();
-// imports
-
-
-// module
-exports.push([module.i, ".hidden {\n  display: none; }\n\n.loadingItem-appear {\n  opacity: 0.01;\n  transform: translateY(30px); }\n\n.loadingItem-appear.loadingItem-appear-active {\n  opacity: 1;\n  transform: translateY(0);\n  will-change: transform opacity;\n  transition: all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55); }\n\n.loadingItem-enter {\n  opacity: 0.01; }\n\n.loadingItem-enter.loadingItem-enter-active {\n  opacity: 1;\n  transition: opacity 500ms ease-in; }\n\n.loadingItem-leave {\n  opacity: 1; }\n\n.loadingItem-leave.loadingItem-leave-active {\n  opacity: 0.01;\n  transition: opacity 300ms ease-in; }\n\n.loadingItem-animate {\n  opacity: 1;\n  transform: translateY(0);\n  will-change: transform opacity;\n  transition: all 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55); }\n", ""]);
-
-// exports
-
-
-/***/ }),
+/* 102 */,
 /* 103 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24512,39 +24457,14 @@ if(false) {
 }
 
 /***/ }),
-/* 204 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(102);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// add the styles to the DOM
-var update = __webpack_require__(33)(content, {});
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./feed.scss", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./feed.scss");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
+/* 204 */,
 /* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _main = __webpack_require__(96);
+var _main = __webpack_require__(206);
 
 var _main2 = _interopRequireDefault(_main);
 
@@ -24578,6 +24498,46 @@ var App = _react2.default.createElement(
 );
 
 _reactDom2.default.render(App, document.getElementById('root'));
+
+/***/ }),
+/* 206 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(207);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(33)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./main.scss", function() {
+			var newContent = require("!!../../node_modules/css-loader/index.js!../../node_modules/sass-loader/lib/loader.js!./main.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 207 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(28)();
+// imports
+
+
+// module
+exports.push([module.i, ".hidden {\n  display: none; }\n\nhtml, body {\n  margin: 0;\n  width: 100%;\n  height: 100%;\n  font-family: \"Proxima Nova\", \"Open Sans\", \"Helvetica\", sans-serif; }\n\n* {\n  box-sizing: border-box !important; }\n\n.nav {\n  padding: 10px 40px;\n  display: flex;\n  align-items: center;\n  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  position: fixed;\n  background: #fff;\n  top: 0;\n  width: 100%;\n  z-index: 1000; }\n  .nav__buttons {\n    display: inline-flex;\n    align-items: center;\n    height: 100%;\n    margin: 0 10px; }\n  .nav__button {\n    width: 120px;\n    text-transform: uppercase;\n    color: #777;\n    text-align: center;\n    font-size: 14px;\n    cursor: pointer; }\n    .nav__button:hover {\n      color: #4A4A4A;\n      transition: 150ms;\n      transition-timing-function: ease-in;\n      will-change: filter transform;\n      -webkit-transition: 150ms;\n      -webkit-transition-timing-function: ease-in; }\n  .nav__socials {\n    display: inline-flex;\n    align-items: center;\n    margin: 0 10px; }\n  .nav__social {\n    padding: 0 15px;\n    color: #01B2FF;\n    cursor: pointer;\n    font-size: 16px;\n    transition: 150ms;\n    transition-timing-function: ease-in;\n    will-change: filter transform;\n    -webkit-transition: 150ms;\n    -webkit-transition-timing-function: ease-in; }\n    .nav__social:hover {\n      color: #42D6FF; }\n\n.nav2 {\n  display: flex;\n  align-items: center;\n  background: #4990E2;\n  font-size: 13px;\n  position: fixed;\n  top: 60px;\n  width: 100%;\n  z-index: 1000; }\n  .nav2__block {\n    background: #01B2FF;\n    padding: 0px 25px 0px 40px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__block2 {\n    padding: 5px 20px 5px 10px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__avatar {\n    width: 40px;\n    height: 40px;\n    margin-right: 15px; }\n  .nav2__text {\n    color: #fff;\n    height: 100%;\n    margin-left: 5px; }\n\nsvg {\n  cursor: pointer; }\n\nsvg:hover #Rectangle-2, svg:hover text {\n  fill: #42D6FF;\n  transition: 150ms;\n  transition-timing-function: ease-in;\n  will-change: filter transform;\n  -webkit-transition: 150ms;\n  -webkit-transition-timing-function: ease-in; }\n\nmain {\n  padding: 100px 120px; }\n\n.app__h1 {\n  font-size: 16px;\n  text-transform: uppercase;\n  font-weight: 600;\n  color: #4990E2;\n  margin: 30px 0; }\n", ""]);
+
+// exports
+
 
 /***/ })
 /******/ ]);

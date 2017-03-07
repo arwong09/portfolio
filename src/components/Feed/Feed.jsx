@@ -1,4 +1,3 @@
-import style from './feed.scss'
 import React, { Component } from 'react'
 import FeedItem from './components/FeedItem/FeedItem.jsx'
 import LoadingItem from './components/LoadingItem/LoadingItem.jsx'
@@ -11,9 +10,9 @@ export default class Feed extends Component {
   }
 
   onLoad(feedItem) {
-    let newState = this.state.loadedItems
-    newState.push({ name: feedItem.props.name, imgPath: feedItem.props.imgPath })
-    this.setState({ loadedItems: newState })
+    let updatedItems = this.state.loadedItems
+    updatedItems.push({ name: feedItem.props.name, imgPath: feedItem.props.imgPath })
+    this.setState({ loadedItems: updatedItems })
     this.loadingItem.animate()
   }
 

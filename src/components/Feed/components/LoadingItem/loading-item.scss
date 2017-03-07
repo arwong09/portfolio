@@ -3,6 +3,10 @@
   width: 100%;
   height: 180px;
   margin-bottom: 37px;
+  animation: loading 5s infinite;
+  will-change: filter;
+  border-radius: 3px;
+  opacity: 0.7;
 }
 
 // ANIMATION
@@ -29,4 +33,40 @@
 .loadingItem-leave.loadingItem-leave-active {
   opacity: 0.01;
   transition: opacity 300ms ease-in;
+}
+
+@keyframes loading {
+  0% {
+    filter: brightness(1);
+  }
+  10% {
+    filter: brightness(0.95);
+  }
+  20% {
+    filter: brightness(1);
+  }
+  30% {
+    filter: brightness(0.95);
+  }
+  40% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(0.95);
+  }
+  60% {
+    filter: brightness(1);
+  }
+  70% {
+    filter: brightness(0.95);
+  }
+  80% {
+    filter: brightness(1);
+  }
+  90% {
+    filter: brightness(0.95);
+  }
+  100% {
+    filter: brightness(1);
+  }
 }
