@@ -1,0 +1,64 @@
+// fadeInUp
+
+.fadeInUp-appear {
+  opacity: 0.01;
+  top: 30px;
+  position: relative;
+}
+
+.fadeInUp-appear.fadeInUp-appear-active {
+  opacity: 1;
+  top: 0;
+  position: relative;
+  transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.fadeInUp-enter {
+  opacity: 0.01;
+}
+
+.fadeInUp-enter.fadeInUp-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fadeInUp-leave {
+  opacity: 1;
+}
+
+.fadeInUp-leave.fadeInUp-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+
+// fadeIn
+
+.fadeIn-appear {
+  opacity: 0.01;
+  filter: brightness(1);
+}
+
+.fadeIn-appear.fadeIn-appear-active {
+  opacity: 1;
+  filter: brightness(0.5);
+  transition: 1s ease-in;
+}
+
+
+.fadeIn-enter {
+  opacity: 0.01;
+}
+
+.fadeIn-enter.fadeIn-enter-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+
+.fadeIn-leave {
+  opacity: 1;
+}
+
+.fadeIn-leave.fadeIn-leave-active {
+  opacity: 0.01;
+  transition: opacity 3000ms ease-in;
+}

@@ -2,6 +2,7 @@ import style from '../assets/css/main.scss'
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import request from 'superagent'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
 class Feed extends Component {
   constructor(props) {
@@ -26,6 +27,24 @@ class Feed extends Component {
   }
 }
 
+const LoadedItem = ({ name, imgPath }) =>
+  <ReactCSSTransitionGroup
+      transitionName="fadeIn"
+      transitionAppear={true}
+      transitionAppearTimeout={1000}>
+    <div className="feed__item__img" style={{backgroundImage: 'url(' + imgPath + ')'}}></div>
+    <h2 className="feed__item__h2">{name}</h2>
+  </ReactCSSTransitionGroup>
+
+const LoadingItem = () =>
+  <ReactCSSTransitionGroup
+      transitionName="fadeInUp"
+      transitionAppear={true}
+      transitionAppearTimeout={1000}
+      transitionLeaveTimeout={300}>
+    <img className="feed__item__loading" src='assets/images/item-loading.png' />
+  </ReactCSSTransitionGroup>
+
 class FeedItem extends Component {
   constructor(props) {
     super(props)
@@ -40,15 +59,11 @@ class FeedItem extends Component {
     return (
       <div className="feed__item">
         <img className="hidden" src={this.props.imgPath} onLoad={this.imageLoaded.bind(this)} />
-
-        {this.state.loaded ? (
-          <div>
-            <div className="feed__item__img" style={{backgroundImage: 'url(' + this.props.imgPath + ')'}}></div>
-            <h2 className="feed__item__h2">{this.props.name}</h2>
-          </div>
-        ) : (
-          <img className="feed__item__loading" src='assets/images/item-loading.png' />
-        )}
+          {this.state.loaded ? (
+            <LoadedItem name={this.props.name} imgPath={this.props.imgPath} />
+          ) : (
+            <LoadingItem />
+          )}
       </div>
     )
   }
