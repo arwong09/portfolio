@@ -128,9 +128,7 @@ main {
     margin-bottom: 40px;
 
     &:hover &__img {
-      filter: brightness(1);
-      background-size: calc(100% + 6px) auto;
-      background-position: -3px -20px;
+      filter: brightness(0.6);
       @include transition($duration: 200ms);
     }
 
@@ -146,7 +144,7 @@ main {
       position: relative;
       height: 180px;
       width: 100%;
-      filter: brightness(0.5);
+      filter: brightness(1);
       background-size: 100% auto;
       background-position: 0 -20px;
     }

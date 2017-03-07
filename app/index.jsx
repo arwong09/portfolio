@@ -23,6 +23,9 @@ class Feed extends Component {
         {this.state.loadedItems.map((item, i) =>
           <FeedItem imgPath={item.imgPath} name={item.name} key={i} />
         )}
+        {this.props.items.length > this.state.loadedItems.length &&
+          <LoadingItem />
+        }
         <div className="feed__loading hidden">
           {this.props.items.map((item, i) =>
             <FeedItem imgPath={item.imgPath} name={item.name} onLoad={this.onLoad} key={i} />
@@ -35,7 +38,7 @@ class Feed extends Component {
 
 const LoadingItem = () =>
   <ReactCSSTransitionGroup
-      transitionName="fadeInUp"
+      transitionName="loadingItem"
       transitionAppear={true}
       transitionAppearTimeout={1000}
       transitionEnterTimeout={500}
@@ -46,19 +49,14 @@ const LoadingItem = () =>
 class FeedItem extends Component {
   constructor(props) {
     super(props)
-    this.state = { loaded: false }
     this.onLoad = this.props.onLoad ? this.props.onLoad.bind(null, this) : null
-  }
-
-  imageLoaded() {
-    this.setState({ loaded: true })
   }
 
   render() {
     return (
       <div className="feed__item">
         <ReactCSSTransitionGroup
-        transitionName="fadeIn"
+        transitionName="item"
         transitionAppear={true}
         transitionAppearTimeout={1000}
         transitionEnterTimeout={500}

@@ -9481,7 +9481,7 @@ exports = module.exports = __webpack_require__(83)();
 
 
 // module
-exports.push([module.i, ".hidden {\n  display: none; }\n\n.fadeInUp-appear {\n  opacity: 0.01;\n  top: 30px;\n  position: relative; }\n\n.fadeInUp-appear.fadeInUp-appear-active {\n  opacity: 1;\n  top: 0;\n  position: relative;\n  transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55); }\n\n.fadeInUp-enter {\n  opacity: 0.01; }\n\n.fadeInUp-enter.fadeInUp-enter-active {\n  opacity: 1;\n  transition: opacity 500ms ease-in; }\n\n.fadeInUp-leave {\n  opacity: 1; }\n\n.fadeInUp-leave.fadeInUp-leave-active {\n  opacity: 0.01;\n  transition: opacity 3000ms ease-in; }\n\n.fadeIn-appear {\n  opacity: 0.01;\n  filter: brightness(1); }\n\n.fadeIn-appear.fadeIn-appear-active {\n  opacity: 1;\n  filter: brightness(0.5);\n  transition: 1s ease-in; }\n\n.fadeIn-enter {\n  opacity: 0.01; }\n\n.fadeIn-enter.fadeIn-enter-active {\n  opacity: 1;\n  transition: opacity 1s ease-in; }\n\n.fadeIn-leave {\n  opacity: 1; }\n\n.fadeIn-leave.fadeIn-leave-active {\n  opacity: 0.01;\n  transition: opacity 3000ms ease-in; }\n\nhtml, body {\n  margin: 0;\n  width: 100%;\n  height: 100%;\n  font-family: \"Proxima Nova\", \"Open Sans\", \"Helvetica\", sans-serif; }\n\n* {\n  box-sizing: border-box !important; }\n\n.nav {\n  padding: 10px 40px;\n  display: flex;\n  align-items: center;\n  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  position: fixed;\n  background: #fff;\n  top: 0;\n  width: 100%;\n  z-index: 1000; }\n  .nav__buttons {\n    display: inline-flex;\n    align-items: center;\n    height: 100%;\n    margin: 0 10px; }\n  .nav__button {\n    width: 120px;\n    text-transform: uppercase;\n    color: #777;\n    text-align: center;\n    font-size: 14px;\n    cursor: pointer; }\n    .nav__button:hover {\n      color: #4A4A4A;\n      transition: 150ms;\n      transition-timing-function: ease-in-out;\n      -webkit-transition: 150ms;\n      -webkit-transition-timing-function: ease-in-out; }\n  .nav__socials {\n    display: inline-flex;\n    align-items: center;\n    margin: 0 10px; }\n  .nav__social {\n    padding: 0 15px;\n    color: #01B2FF;\n    cursor: pointer;\n    font-size: 16px;\n    transition: 150ms;\n    transition-timing-function: ease-in-out;\n    -webkit-transition: 150ms;\n    -webkit-transition-timing-function: ease-in-out; }\n    .nav__social:hover {\n      color: #42D6FF; }\n\n.nav2 {\n  display: flex;\n  align-items: center;\n  background: #4990E2;\n  font-size: 13px;\n  position: fixed;\n  top: 60px;\n  width: 100%;\n  z-index: 1000; }\n  .nav2__block {\n    background: #01B2FF;\n    padding: 0px 25px 0px 40px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__block2 {\n    padding: 5px 20px 5px 10px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__avatar {\n    width: 40px;\n    height: 40px;\n    margin-right: 15px; }\n  .nav2__text {\n    color: #fff;\n    height: 100%;\n    margin-left: 5px; }\n\nsvg {\n  cursor: pointer; }\n\nsvg:hover #Rectangle-2, svg:hover text {\n  fill: #42D6FF;\n  transition: 150ms;\n  transition-timing-function: ease-in-out;\n  -webkit-transition: 150ms;\n  -webkit-transition-timing-function: ease-in-out; }\n\nmain {\n  padding: 100px 120px; }\n\n.app__h1 {\n  font-size: 16px;\n  text-transform: uppercase;\n  font-weight: 600;\n  color: #4990E2;\n  margin: 30px 0; }\n\n.feed__item {\n  cursor: pointer;\n  margin-bottom: 40px; }\n  .feed__item:hover .feed__item__img {\n    filter: brightness(1);\n    background-size: calc(100% + 6px) auto;\n    background-position: -3px -20px;\n    transition: 200ms;\n    transition-timing-function: ease-in-out;\n    -webkit-transition: 200ms;\n    -webkit-transition-timing-function: ease-in-out; }\n  .feed__item__h2 {\n    font-size: 16px;\n    text-transform: uppercase;\n    color: #777;\n    font-weight: 400;\n    margin: 20px 0 0 0; }\n  .feed__item__img {\n    position: relative;\n    height: 180px;\n    width: 100%;\n    filter: brightness(0.5);\n    background-size: 100% auto;\n    background-position: 0 -20px; }\n  .feed__item__loading {\n    position: relative;\n    width: 100%;\n    height: 180px;\n    margin-bottom: 37px; }\n", ""]);
+exports.push([module.i, ".hidden {\n  display: none; }\n\n.loadingItem-appear {\n  opacity: 0.01;\n  transform: translateY(30px); }\n\n.loadingItem-appear.loadingItem-appear-active {\n  opacity: 1;\n  transform: translateY(0);\n  will-change: transform opacity;\n  transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55); }\n\n.loadingItem-enter {\n  opacity: 0.01; }\n\n.loadingItem-enter.loadingItem-enter-active {\n  opacity: 1;\n  transition: opacity 500ms ease-in; }\n\n.loadingItem-leave {\n  opacity: 1; }\n\n.loadingItem-leave.loadingItem-leave-active {\n  opacity: 0.01;\n  transition: opacity 300ms ease-in; }\n\n.item-appear {\n  opacity: 0.01;\n  transform: translateY(3px); }\n\n.item-appear.item-appear-active {\n  opacity: 1;\n  transform: translateY(0);\n  will-change: transform opacity;\n  transition: all 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55); }\n\n.item-enter {\n  opacity: 0.01; }\n\n.item-enter.item-enter-active {\n  opacity: 1;\n  transition: opacity 1s ease-in; }\n\n.item-leave {\n  opacity: 1; }\n\n.item-leave.item-leave-active {\n  opacity: 0.01;\n  transition: opacity 3000ms ease-in; }\n\nhtml, body {\n  margin: 0;\n  width: 100%;\n  height: 100%;\n  font-family: \"Proxima Nova\", \"Open Sans\", \"Helvetica\", sans-serif; }\n\n* {\n  box-sizing: border-box !important; }\n\n.nav {\n  padding: 10px 40px;\n  display: flex;\n  align-items: center;\n  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  position: fixed;\n  background: #fff;\n  top: 0;\n  width: 100%;\n  z-index: 1000; }\n  .nav__buttons {\n    display: inline-flex;\n    align-items: center;\n    height: 100%;\n    margin: 0 10px; }\n  .nav__button {\n    width: 120px;\n    text-transform: uppercase;\n    color: #777;\n    text-align: center;\n    font-size: 14px;\n    cursor: pointer; }\n    .nav__button:hover {\n      color: #4A4A4A;\n      transition: 150ms;\n      transition-timing-function: ease-in;\n      will-change: filter transform;\n      -webkit-transition: 150ms;\n      -webkit-transition-timing-function: ease-in; }\n  .nav__socials {\n    display: inline-flex;\n    align-items: center;\n    margin: 0 10px; }\n  .nav__social {\n    padding: 0 15px;\n    color: #01B2FF;\n    cursor: pointer;\n    font-size: 16px;\n    transition: 150ms;\n    transition-timing-function: ease-in;\n    will-change: filter transform;\n    -webkit-transition: 150ms;\n    -webkit-transition-timing-function: ease-in; }\n    .nav__social:hover {\n      color: #42D6FF; }\n\n.nav2 {\n  display: flex;\n  align-items: center;\n  background: #4990E2;\n  font-size: 13px;\n  position: fixed;\n  top: 60px;\n  width: 100%;\n  z-index: 1000; }\n  .nav2__block {\n    background: #01B2FF;\n    padding: 0px 25px 0px 40px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__block2 {\n    padding: 5px 20px 5px 10px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__avatar {\n    width: 40px;\n    height: 40px;\n    margin-right: 15px; }\n  .nav2__text {\n    color: #fff;\n    height: 100%;\n    margin-left: 5px; }\n\nsvg {\n  cursor: pointer; }\n\nsvg:hover #Rectangle-2, svg:hover text {\n  fill: #42D6FF;\n  transition: 150ms;\n  transition-timing-function: ease-in;\n  will-change: filter transform;\n  -webkit-transition: 150ms;\n  -webkit-transition-timing-function: ease-in; }\n\nmain {\n  padding: 100px 120px; }\n\n.app__h1 {\n  font-size: 16px;\n  text-transform: uppercase;\n  font-weight: 600;\n  color: #4990E2;\n  margin: 30px 0; }\n\n.feed__item {\n  cursor: pointer;\n  margin-bottom: 40px; }\n  .feed__item:hover .feed__item__img {\n    filter: brightness(0.6);\n    transition: 200ms;\n    transition-timing-function: ease-in;\n    will-change: filter transform;\n    -webkit-transition: 200ms;\n    -webkit-transition-timing-function: ease-in; }\n  .feed__item__h2 {\n    font-size: 16px;\n    text-transform: uppercase;\n    color: #777;\n    font-weight: 400;\n    margin: 20px 0 0 0; }\n  .feed__item__img {\n    position: relative;\n    height: 180px;\n    width: 100%;\n    filter: brightness(1);\n    background-size: 100% auto;\n    background-position: 0 -20px; }\n  .feed__item__loading {\n    position: relative;\n    width: 100%;\n    height: 180px;\n    margin-bottom: 37px; }\n", ""]);
 
 // exports
 
@@ -22092,6 +22092,7 @@ var Feed = function (_Component) {
         this.state.loadedItems.map(function (item, i) {
           return _react2.default.createElement(FeedItem, { imgPath: item.imgPath, name: item.name, key: i });
         }),
+        this.props.items.length > this.state.loadedItems.length && _react2.default.createElement(LoadingItem, null),
         _react2.default.createElement(
           'div',
           { className: 'feed__loading hidden' },
@@ -22110,7 +22111,7 @@ var LoadingItem = function LoadingItem() {
   return _react2.default.createElement(
     _reactAddonsCssTransitionGroup2.default,
     {
-      transitionName: 'fadeInUp',
+      transitionName: 'loadingItem',
       transitionAppear: true,
       transitionAppearTimeout: 1000,
       transitionEnterTimeout: 500,
@@ -22127,17 +22128,11 @@ var FeedItem = function (_Component2) {
 
     var _this3 = _possibleConstructorReturn(this, (FeedItem.__proto__ || Object.getPrototypeOf(FeedItem)).call(this, props));
 
-    _this3.state = { loaded: false };
     _this3.onLoad = _this3.props.onLoad ? _this3.props.onLoad.bind(null, _this3) : null;
     return _this3;
   }
 
   _createClass(FeedItem, [{
-    key: 'imageLoaded',
-    value: function imageLoaded() {
-      this.setState({ loaded: true });
-    }
-  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -22146,7 +22141,7 @@ var FeedItem = function (_Component2) {
         _react2.default.createElement(
           _reactAddonsCssTransitionGroup2.default,
           {
-            transitionName: 'fadeIn',
+            transitionName: 'item',
             transitionAppear: true,
             transitionAppearTimeout: 1000,
             transitionEnterTimeout: 500,

@@ -11,9 +11,10 @@ $black: #4A4A4A;
 
 @mixin transition($duration: 150ms) {
   transition: $duration;
-  transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in;
+  will-change: filter transform;
   -webkit-transition: $duration;
-  -webkit-transition-timing-function: ease-in-out;
+  -webkit-transition-timing-function: ease-in;
 }
 
 .hidden {
