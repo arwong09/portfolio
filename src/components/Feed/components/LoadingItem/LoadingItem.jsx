@@ -1,7 +1,7 @@
 import style from './loading-item.scss'
 import React, { Component } from 'react'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
-let img = 'dist/' + require('./loading-item.png');
+const img = 'dist/' + require('./loading-item.png');
 
 export default class LoadingItem extends Component {
   animate() {

@@ -6,12 +6,20 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 export default class FeedItem extends Component {
   constructor(props) {
     super(props)
+    this.handleClick = this.handleClick.bind(this)
     this.onLoad = this.props.onLoad ? this.props.onLoad.bind(null, this) : null
+  }
+
+  handleClick() {
+    this.props.renderModal({
+      name: this.props.name,
+      imgPath: this.props.imgPath
+    })
   }
 
   render() {
     return (
-      <div className="feed__item">
+      <div className="feed__item" onClick={this.handleClick}>
         <ReactCSSTransitionGroup
         transitionName="item"
         transitionAppear={true}

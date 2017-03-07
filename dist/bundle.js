@@ -11793,8 +11793,17 @@ var Feed = function (_Component) {
       return _react2.default.createElement(
         'div',
         { className: 'feed' },
+        _react2.default.createElement(
+          'h1',
+          { className: 'app__h1' },
+          'Panoramas'
+        ),
         this.state.loadedItems.map(function (item, i) {
-          return _react2.default.createElement(_FeedItem2.default, { imgPath: item.imgPath, name: item.name, key: i });
+          return _react2.default.createElement(_FeedItem2.default, {
+            imgPath: item.imgPath,
+            name: item.name,
+            renderModal: _this2.props.renderModal,
+            key: i });
         }),
         this.props.items.length > this.state.loadedItems.length && _react2.default.createElement(_LoadingItem2.default, { ref: function ref(loadingItem) {
             return _this2.loadingItem = loadingItem;
@@ -11803,7 +11812,11 @@ var Feed = function (_Component) {
           'div',
           { className: 'feed__loading hidden' },
           this.props.items.map(function (item, i) {
-            return _react2.default.createElement(_FeedItem2.default, { imgPath: item.imgPath, name: item.name, onLoad: _this2.onLoad, key: i });
+            return _react2.default.createElement(_FeedItem2.default, {
+              imgPath: item.imgPath,
+              name: item.name,
+              onLoad: _this2.onLoad,
+              key: i });
           })
         )
       );
@@ -11831,6 +11844,33 @@ var ITEMS = exports.ITEMS = [{
 }, {
   name: 'Santa Marta',
   imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/santa-marta-c.jpg'
+}, {
+  name: 'Atacama Field',
+  imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/atacama-field-c.jpg'
+}, {
+  name: 'Atacama Sunset',
+  imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/atacama-sunset-c.jpg'
+}, {
+  name: 'Candlestick Park',
+  imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/att-park-c.jpg'
+}, {
+  name: 'Barranquilla at Night',
+  imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/barranquilla-c.jpg'
+}, {
+  name: 'Fiesta de Garabato',
+  imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/barranquilla-garabato-c.jpg'
+}, {
+  name: 'Casablanca Wine Festival',
+  imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/casablanca-c.jpg'
+}, {
+  name: 'Roman Colosseum',
+  imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/colosseum-c.jpg'
+}, {
+  name: 'Roman History',
+  imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/rome-museum-c.jpg'
+}, {
+  name: 'Atacama Salt Flat',
+  imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/atacama-salt-flat-c.jpg'
 }];
 
 /***/ }),
@@ -11879,16 +11919,25 @@ var FeedItem = function (_Component) {
 
     var _this = _possibleConstructorReturn(this, (FeedItem.__proto__ || Object.getPrototypeOf(FeedItem)).call(this, props));
 
+    _this.handleClick = _this.handleClick.bind(_this);
     _this.onLoad = _this.props.onLoad ? _this.props.onLoad.bind(null, _this) : null;
     return _this;
   }
 
   _createClass(FeedItem, [{
+    key: 'handleClick',
+    value: function handleClick() {
+      this.props.renderModal({
+        name: this.props.name,
+        imgPath: this.props.imgPath
+      });
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { className: 'feed__item' },
+        { className: 'feed__item', onClick: this.handleClick },
         _react2.default.createElement(
           _reactAddonsCssTransitionGroup2.default,
           {
@@ -24464,6 +24513,8 @@ if(false) {
 "use strict";
 
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _main = __webpack_require__(206);
 
 var _main2 = _interopRequireDefault(_main);
@@ -24482,22 +24533,55 @@ var _Feed = __webpack_require__(94);
 
 var _Feed2 = _interopRequireDefault(_Feed);
 
+var _Modal = __webpack_require__(208);
+
+var _Modal2 = _interopRequireDefault(_Modal);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-console.log('hi');
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var App = _react2.default.createElement(
-  'div',
-  { className: 'app' },
-  _react2.default.createElement(
-    'h1',
-    { className: 'app__h1' },
-    'Panoramas'
-  ),
-  _react2.default.createElement(_Feed2.default, { items: _items.ITEMS })
-);
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-_reactDom2.default.render(App, document.getElementById('root'));
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var App = function (_Component) {
+  _inherits(App, _Component);
+
+  function App(props) {
+    _classCallCheck(this, App);
+
+    var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+
+    _this.state = { modalContent: null };
+    _this.renderModal = _this.renderModal.bind(_this);
+    return _this;
+  }
+
+  _createClass(App, [{
+    key: 'renderModal',
+    value: function renderModal(modalContent) {
+      this.setState({ modalContent: modalContent });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'app' },
+        this.state.modalContent && _react2.default.createElement(_Modal2.default, {
+          name: this.state.modalContent.name,
+          imgPath: this.state.modalContent.imgPath,
+          description: this.state.modalContent.description }),
+        _react2.default.createElement(_Feed2.default, { items: _items.ITEMS, renderModal: this.renderModal })
+      );
+    }
+  }]);
+
+  return App;
+}(_react.Component);
+
+_reactDom2.default.render(_react2.default.createElement(App, null), document.getElementById('root'));
 
 /***/ }),
 /* 206 */
@@ -24538,6 +24622,118 @@ exports.push([module.i, ".hidden {\n  display: none; }\n\nhtml, body {\n  margin
 
 // exports
 
+
+/***/ }),
+/* 208 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _modalStyle = __webpack_require__(210);
+
+var _modalStyle2 = _interopRequireDefault(_modalStyle);
+
+var _react = __webpack_require__(27);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactAddonsCssTransitionGroup = __webpack_require__(60);
+
+var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Modal = function (_Component) {
+  _inherits(Modal, _Component);
+
+  function Modal(props) {
+    _classCallCheck(this, Modal);
+
+    return _possibleConstructorReturn(this, (Modal.__proto__ || Object.getPrototypeOf(Modal)).call(this, props));
+  }
+
+  _createClass(Modal, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        _reactAddonsCssTransitionGroup2.default,
+        {
+          transitionName: 'modal',
+          transitionAppear: true,
+          transitionAppearTimeout: 200,
+          transitionEnterTimeout: 200,
+          transitionLeaveTimeout: 200 },
+        _react2.default.createElement(
+          'div',
+          { className: 'modal' },
+          _react2.default.createElement(
+            'h1',
+            { className: 'modal__h1' },
+            this.props.name
+          ),
+          _react2.default.createElement('img', { className: 'modal__img', src: this.props.imgPath })
+        )
+      );
+    }
+  }]);
+
+  return Modal;
+}(_react.Component);
+
+exports.default = Modal;
+
+/***/ }),
+/* 209 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(28)();
+// imports
+
+
+// module
+exports.push([module.i, ".hidden {\n  display: none; }\n\n.modal {\n  background: rgba(51, 51, 51, 0.75);\n  position: fixed;\n  top: 100px;\n  left: 0;\n  height: 100%;\n  width: 100%;\n  padding: 30px;\n  z-index: 1000; }\n  .modal__img {\n    width: 100%; }\n  .modal__h1 {\n    position: fixed;\n    top: 130px;\n    left: 40px;\n    background: #fafafa;\n    text-transform: uppercase;\n    color: #4A4A4A;\n    font-size: 16px;\n    text-align: center;\n    padding: 5px 15px;\n    border: 1px solid #4A4A4A;\n    border-radius: 2px;\n    letter-spacing: 1px;\n    opacity: 0.7;\n    font-weight: 600;\n    font-family: 'Garamond', serif;\n    box-shadow: -1px 1px 8px rgba(0, 0, 0, 0.2); }\n\n.modal-appear,\n.modal-enter {\n  opacity: 0.01; }\n\n.modal-appear.modal-appear-active,\n.modal-enter.modal-enter-active {\n  opacity: 1;\n  will-change: opacity;\n  transition: opacity 200ms ease-in; }\n\n.modal-leave {\n  opacity: 1; }\n\n.modal-leave.modal-leave-active {\n  opacity: 0.01;\n  transition: opacity 200ms ease-in; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 210 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(209);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(33)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./modal-style.scss", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./modal-style.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
 
 /***/ })
 /******/ ]);

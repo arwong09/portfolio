@@ -19,15 +19,24 @@ export default class Feed extends Component {
   render() {
     return (
       <div className="feed">
+        <h1 className="app__h1">Panoramas</h1>
         {this.state.loadedItems.map((item, i) =>
-          <FeedItem imgPath={item.imgPath} name={item.name} key={i} />
+          <FeedItem
+            imgPath={item.imgPath}
+            name={item.name}
+            renderModal={this.props.renderModal}
+            key={i} />
         )}
         {this.props.items.length > this.state.loadedItems.length &&
           <LoadingItem ref={(loadingItem) => this.loadingItem = loadingItem} />
         }
         <div className="feed__loading hidden">
           {this.props.items.map((item, i) =>
-            <FeedItem imgPath={item.imgPath} name={item.name} onLoad={this.onLoad} key={i} />
+            <FeedItem
+              imgPath={item.imgPath}
+              name={item.name}
+              onLoad={this.onLoad}
+              key={i} />
           )}
         </div>
       </div>
