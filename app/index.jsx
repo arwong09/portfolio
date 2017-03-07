@@ -15,6 +15,7 @@ class Feed extends Component {
     let newState = this.state.loadedItems
     newState.push({ name: feedItem.props.name, imgPath: feedItem.props.imgPath })
     this.setState({ loadedItems: newState })
+    this.loadingItem.animate()
   }
 
   render() {
@@ -24,7 +25,7 @@ class Feed extends Component {
           <FeedItem imgPath={item.imgPath} name={item.name} key={i} />
         )}
         {this.props.items.length > this.state.loadedItems.length &&
-          <LoadingItem />
+          <LoadingItem ref={(loadingItem) => this.loadingItem = loadingItem} />
         }
         <div className="feed__loading hidden">
           {this.props.items.map((item, i) =>
@@ -36,15 +37,26 @@ class Feed extends Component {
   }
 }
 
-const LoadingItem = () =>
+class LoadingItem extends Component {
+  animate() {
+    this.img.style.transform = 'translateY(30px)'
+    this.img.style.opacity = '0.01'
+    this.img.classList = this.img.classList + " loadingItem-animate"
+  }
+
+  render() {
+    return (
   <ReactCSSTransitionGroup
       transitionName="loadingItem"
       transitionAppear={true}
       transitionAppearTimeout={1000}
       transitionEnterTimeout={500}
       transitionLeaveTimeout={300}>
-    <img className="feed__item__loading" src='assets/images/item-loading.png' />
+    <img ref={(img) => this.img = img} className="feed__item__loading" src='assets/images/item-loading.png' />
   </ReactCSSTransitionGroup>
+  )
+}
+}
 
 class FeedItem extends Component {
   constructor(props) {
