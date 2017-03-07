@@ -9481,7 +9481,7 @@ exports = module.exports = __webpack_require__(83)();
 
 
 // module
-exports.push([module.i, ".hidden {\n  display: none; }\n\n.fadeInUp-appear {\n  opacity: 0.01;\n  top: 30px;\n  position: relative; }\n\n.fadeInUp-appear.fadeInUp-appear-active {\n  opacity: 1;\n  top: 0;\n  position: relative;\n  transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55); }\n\n.fadeInUp-enter {\n  opacity: 0.01; }\n\n.fadeInUp-enter.fadeInUp-enter-active {\n  opacity: 1;\n  transition: opacity 500ms ease-in; }\n\n.fadeInUp-leave {\n  opacity: 1; }\n\n.fadeInUp-leave.fadeInUp-leave-active {\n  opacity: 0.01;\n  transition: opacity 300ms ease-in; }\n\n.fadeIn-appear {\n  opacity: 0.01;\n  filter: brightness(1); }\n\n.fadeIn-appear.fadeIn-appear-active {\n  opacity: 1;\n  filter: brightness(0.5);\n  transition: 1s ease-in; }\n\n.fadeIn-enter {\n  opacity: 0.01; }\n\n.fadeIn-enter.fadeIn-enter-active {\n  opacity: 1;\n  transition: opacity 1s ease-in; }\n\n.fadeIn-leave {\n  opacity: 1; }\n\n.fadeIn-leave.fadeIn-leave-active {\n  opacity: 0.01;\n  transition: opacity 3000ms ease-in; }\n\nhtml, body {\n  margin: 0;\n  width: 100%;\n  height: 100%;\n  font-family: \"Proxima Nova\", \"Open Sans\", \"Helvetica\", sans-serif; }\n\n* {\n  box-sizing: border-box !important; }\n\n.nav {\n  padding: 10px 40px;\n  display: flex;\n  align-items: center;\n  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  position: fixed;\n  background: #fff;\n  top: 0;\n  width: 100%;\n  z-index: 1000; }\n  .nav__buttons {\n    display: inline-flex;\n    align-items: center;\n    height: 100%;\n    margin: 0 10px; }\n  .nav__button {\n    width: 120px;\n    text-transform: uppercase;\n    color: #777;\n    text-align: center;\n    font-size: 14px;\n    cursor: pointer; }\n    .nav__button:hover {\n      color: #4A4A4A;\n      transition: 150ms;\n      transition-timing-function: ease-in-out;\n      -webkit-transition: 150ms;\n      -webkit-transition-timing-function: ease-in-out; }\n  .nav__socials {\n    display: inline-flex;\n    align-items: center;\n    margin: 0 10px; }\n  .nav__social {\n    padding: 0 15px;\n    color: #01B2FF;\n    cursor: pointer;\n    font-size: 16px;\n    transition: 150ms;\n    transition-timing-function: ease-in-out;\n    -webkit-transition: 150ms;\n    -webkit-transition-timing-function: ease-in-out; }\n    .nav__social:hover {\n      color: #42D6FF; }\n\n.nav2 {\n  display: flex;\n  align-items: center;\n  background: #4990E2;\n  font-size: 13px;\n  position: fixed;\n  top: 60px;\n  width: 100%;\n  z-index: 1000; }\n  .nav2__block {\n    background: #01B2FF;\n    padding: 0px 25px 0px 40px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__block2 {\n    padding: 5px 20px 5px 10px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__avatar {\n    width: 40px;\n    height: 40px;\n    margin-right: 15px; }\n  .nav2__text {\n    color: #fff;\n    height: 100%;\n    margin-left: 5px; }\n\nsvg {\n  cursor: pointer; }\n\nsvg:hover #Rectangle-2, svg:hover text {\n  fill: #42D6FF;\n  transition: 150ms;\n  transition-timing-function: ease-in-out;\n  -webkit-transition: 150ms;\n  -webkit-transition-timing-function: ease-in-out; }\n\nmain {\n  padding: 100px 120px; }\n\n.app__h1 {\n  font-size: 16px;\n  text-transform: uppercase;\n  font-weight: 600;\n  color: #4990E2;\n  margin: 30px 0; }\n\n.feed__item {\n  cursor: pointer;\n  margin-bottom: 40px; }\n  .feed__item:hover .feed__item__img {\n    filter: brightness(1);\n    background-size: calc(100% + 6px) auto;\n    background-position: -3px -20px;\n    transition: 200ms;\n    transition-timing-function: ease-in-out;\n    -webkit-transition: 200ms;\n    -webkit-transition-timing-function: ease-in-out; }\n  .feed__item__h2 {\n    font-size: 16px;\n    text-transform: uppercase;\n    color: #777;\n    font-weight: 400;\n    margin: 20px 0 0 0; }\n  .feed__item__img {\n    position: relative;\n    height: 180px;\n    width: 100%;\n    filter: brightness(0.5);\n    background-size: 100% auto;\n    background-position: 0 -20px; }\n  .feed__item__loading {\n    position: relative;\n    width: 100%;\n    height: 180px;\n    margin-bottom: 37px; }\n", ""]);
+exports.push([module.i, ".hidden {\n  display: none; }\n\n.fadeInUp-appear {\n  opacity: 0.01;\n  top: 30px;\n  position: relative; }\n\n.fadeInUp-appear.fadeInUp-appear-active {\n  opacity: 1;\n  top: 0;\n  position: relative;\n  transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55); }\n\n.fadeInUp-enter {\n  opacity: 0.01; }\n\n.fadeInUp-enter.fadeInUp-enter-active {\n  opacity: 1;\n  transition: opacity 500ms ease-in; }\n\n.fadeInUp-leave {\n  opacity: 1; }\n\n.fadeInUp-leave.fadeInUp-leave-active {\n  opacity: 0.01;\n  transition: opacity 3000ms ease-in; }\n\n.fadeIn-appear {\n  opacity: 0.01;\n  filter: brightness(1); }\n\n.fadeIn-appear.fadeIn-appear-active {\n  opacity: 1;\n  filter: brightness(0.5);\n  transition: 1s ease-in; }\n\n.fadeIn-enter {\n  opacity: 0.01; }\n\n.fadeIn-enter.fadeIn-enter-active {\n  opacity: 1;\n  transition: opacity 1s ease-in; }\n\n.fadeIn-leave {\n  opacity: 1; }\n\n.fadeIn-leave.fadeIn-leave-active {\n  opacity: 0.01;\n  transition: opacity 3000ms ease-in; }\n\nhtml, body {\n  margin: 0;\n  width: 100%;\n  height: 100%;\n  font-family: \"Proxima Nova\", \"Open Sans\", \"Helvetica\", sans-serif; }\n\n* {\n  box-sizing: border-box !important; }\n\n.nav {\n  padding: 10px 40px;\n  display: flex;\n  align-items: center;\n  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);\n  position: fixed;\n  background: #fff;\n  top: 0;\n  width: 100%;\n  z-index: 1000; }\n  .nav__buttons {\n    display: inline-flex;\n    align-items: center;\n    height: 100%;\n    margin: 0 10px; }\n  .nav__button {\n    width: 120px;\n    text-transform: uppercase;\n    color: #777;\n    text-align: center;\n    font-size: 14px;\n    cursor: pointer; }\n    .nav__button:hover {\n      color: #4A4A4A;\n      transition: 150ms;\n      transition-timing-function: ease-in-out;\n      -webkit-transition: 150ms;\n      -webkit-transition-timing-function: ease-in-out; }\n  .nav__socials {\n    display: inline-flex;\n    align-items: center;\n    margin: 0 10px; }\n  .nav__social {\n    padding: 0 15px;\n    color: #01B2FF;\n    cursor: pointer;\n    font-size: 16px;\n    transition: 150ms;\n    transition-timing-function: ease-in-out;\n    -webkit-transition: 150ms;\n    -webkit-transition-timing-function: ease-in-out; }\n    .nav__social:hover {\n      color: #42D6FF; }\n\n.nav2 {\n  display: flex;\n  align-items: center;\n  background: #4990E2;\n  font-size: 13px;\n  position: fixed;\n  top: 60px;\n  width: 100%;\n  z-index: 1000; }\n  .nav2__block {\n    background: #01B2FF;\n    padding: 0px 25px 0px 40px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__block2 {\n    padding: 5px 20px 5px 10px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__avatar {\n    width: 40px;\n    height: 40px;\n    margin-right: 15px; }\n  .nav2__text {\n    color: #fff;\n    height: 100%;\n    margin-left: 5px; }\n\nsvg {\n  cursor: pointer; }\n\nsvg:hover #Rectangle-2, svg:hover text {\n  fill: #42D6FF;\n  transition: 150ms;\n  transition-timing-function: ease-in-out;\n  -webkit-transition: 150ms;\n  -webkit-transition-timing-function: ease-in-out; }\n\nmain {\n  padding: 100px 120px; }\n\n.app__h1 {\n  font-size: 16px;\n  text-transform: uppercase;\n  font-weight: 600;\n  color: #4990E2;\n  margin: 30px 0; }\n\n.feed__item {\n  cursor: pointer;\n  margin-bottom: 40px; }\n  .feed__item:hover .feed__item__img {\n    filter: brightness(1);\n    background-size: calc(100% + 6px) auto;\n    background-position: -3px -20px;\n    transition: 200ms;\n    transition-timing-function: ease-in-out;\n    -webkit-transition: 200ms;\n    -webkit-transition-timing-function: ease-in-out; }\n  .feed__item__h2 {\n    font-size: 16px;\n    text-transform: uppercase;\n    color: #777;\n    font-weight: 400;\n    margin: 20px 0 0 0; }\n  .feed__item__img {\n    position: relative;\n    height: 180px;\n    width: 100%;\n    filter: brightness(0.5);\n    background-size: 100% auto;\n    background-position: 0 -20px; }\n  .feed__item__loading {\n    position: relative;\n    width: 100%;\n    height: 180px;\n    margin-bottom: 37px; }\n", ""]);
 
 // exports
 
@@ -22069,49 +22069,42 @@ var Feed = function (_Component) {
 
     var _this = _possibleConstructorReturn(this, (Feed.__proto__ || Object.getPrototypeOf(Feed)).call(this, props));
 
-    _this.state = { items: [{
-        name: 'Parque Tayrona',
-        imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/parque-tayrona-c.jpg'
-      }, {
-        name: 'Santa Marta',
-        imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/santa-marta-c.jpg'
-      }] };
+    _this.state = { loadedItems: [] };
+    _this.onLoad = _this.onLoad.bind(_this);
     return _this;
   }
 
   _createClass(Feed, [{
+    key: 'onLoad',
+    value: function onLoad(feedItem) {
+      var newState = this.state.loadedItems;
+      newState.push({ name: feedItem.props.name, imgPath: feedItem.props.imgPath });
+      this.setState({ loadedItems: newState });
+    }
+  }, {
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
       return _react2.default.createElement(
         'div',
         { className: 'feed' },
-        this.state.items.map(function (item, i) {
+        this.state.loadedItems.map(function (item, i) {
           return _react2.default.createElement(FeedItem, { imgPath: item.imgPath, name: item.name, key: i });
-        })
+        }),
+        _react2.default.createElement(
+          'div',
+          { className: 'feed__loading hidden' },
+          this.props.items.map(function (item, i) {
+            return _react2.default.createElement(FeedItem, { imgPath: item.imgPath, name: item.name, onLoad: _this2.onLoad, key: i });
+          })
+        )
       );
     }
   }]);
 
   return Feed;
 }(_react.Component);
-
-var LoadedItem = function LoadedItem(_ref) {
-  var name = _ref.name,
-      imgPath = _ref.imgPath;
-  return _react2.default.createElement(
-    _reactAddonsCssTransitionGroup2.default,
-    {
-      transitionName: 'fadeIn',
-      transitionAppear: true,
-      transitionAppearTimeout: 1000 },
-    _react2.default.createElement('div', { className: 'feed__item__img', style: { backgroundImage: 'url(' + imgPath + ')' } }),
-    _react2.default.createElement(
-      'h2',
-      { className: 'feed__item__h2' },
-      name
-    )
-  );
-};
 
 var LoadingItem = function LoadingItem() {
   return _react2.default.createElement(
@@ -22120,6 +22113,7 @@ var LoadingItem = function LoadingItem() {
       transitionName: 'fadeInUp',
       transitionAppear: true,
       transitionAppearTimeout: 1000,
+      transitionEnterTimeout: 500,
       transitionLeaveTimeout: 300 },
     _react2.default.createElement('img', { className: 'feed__item__loading', src: 'assets/images/item-loading.png' })
   );
@@ -22131,10 +22125,11 @@ var FeedItem = function (_Component2) {
   function FeedItem(props) {
     _classCallCheck(this, FeedItem);
 
-    var _this2 = _possibleConstructorReturn(this, (FeedItem.__proto__ || Object.getPrototypeOf(FeedItem)).call(this, props));
+    var _this3 = _possibleConstructorReturn(this, (FeedItem.__proto__ || Object.getPrototypeOf(FeedItem)).call(this, props));
 
-    _this2.state = { loaded: false };
-    return _this2;
+    _this3.state = { loaded: false };
+    _this3.onLoad = _this3.props.onLoad ? _this3.props.onLoad.bind(null, _this3) : null;
+    return _this3;
   }
 
   _createClass(FeedItem, [{
@@ -22148,14 +22143,36 @@ var FeedItem = function (_Component2) {
       return _react2.default.createElement(
         'div',
         { className: 'feed__item' },
-        _react2.default.createElement('img', { className: 'hidden', src: this.props.imgPath, onLoad: this.imageLoaded.bind(this) }),
-        this.state.loaded ? _react2.default.createElement(LoadedItem, { name: this.props.name, imgPath: this.props.imgPath }) : _react2.default.createElement(LoadingItem, null)
+        _react2.default.createElement(
+          _reactAddonsCssTransitionGroup2.default,
+          {
+            transitionName: 'fadeIn',
+            transitionAppear: true,
+            transitionAppearTimeout: 1000,
+            transitionEnterTimeout: 500,
+            transitionLeaveTimeout: 300 },
+          _react2.default.createElement('div', { className: 'feed__item__img', style: { backgroundImage: 'url(' + this.props.imgPath + ')' } }),
+          _react2.default.createElement(
+            'h2',
+            { className: 'feed__item__h2' },
+            this.props.name
+          )
+        ),
+        _react2.default.createElement('img', { className: 'hidden', src: this.props.imgPath, onLoad: this.onLoad })
       );
     }
   }]);
 
   return FeedItem;
 }(_react.Component);
+
+var items = [{
+  name: 'Parque Tayrona',
+  imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/parque-tayrona-c.jpg'
+}, {
+  name: 'Santa Marta',
+  imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/santa-marta-c.jpg'
+}];
 
 var App = _react2.default.createElement(
   'div',
@@ -22165,7 +22182,7 @@ var App = _react2.default.createElement(
     { className: 'app__h1' },
     'Panoramas'
   ),
-  _react2.default.createElement(Feed, { initialItem: { name: "Parque Tayrona", imgPath: "https://s3-us-west-1.amazonaws.com/nomadwong-photos/parque-tayrona-c.jpg" } })
+  _react2.default.createElement(Feed, { items: items })
 );
 
 _reactDom2.default.render(App, document.getElementById('root'));
