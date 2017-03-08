@@ -107,10 +107,6 @@ svg:hover #Rectangle-2, svg:hover text {
   @include transition;
 }
 
-main {
-  padding: 100px 120px;
-}
-
 .app {
   &__h1 {
     font-size: 16px;

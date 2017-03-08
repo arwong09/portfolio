@@ -1,4 +1,4 @@
-export const ITEMS = [
+export const PHOTOS = [
   {
     name: 'Parque Tayrona',
     imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/parque-tayrona-c.jpg'
@@ -33,4 +33,11 @@ export const ITEMS = [
     name: 'Atacama Salt Flat',
     imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/atacama-salt-flat-c.jpg'
   },
+]
+
+export const PORTFOLIO = [
+ {
+    name: 'Atacama Salt Flat',
+    imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/atacama-salt-flat-c.jpg'
+  }
 ]

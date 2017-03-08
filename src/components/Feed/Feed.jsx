@@ -1,3 +1,4 @@
+import style from './feed.scss'
 import React, { Component } from 'react'
 import FeedItem from './components/FeedItem/FeedItem.jsx'
 import LoadingItem from './components/LoadingItem/LoadingItem.jsx'
@@ -13,13 +14,17 @@ export default class Feed extends Component {
     let updatedItems = this.state.loadedItems
     updatedItems.push({ name: feedItem.props.name, imgPath: feedItem.props.imgPath })
     this.setState({ loadedItems: updatedItems })
-    this.loadingItem.animate()
+    this.loadingItem ? this.loadingItem.animate() : null
+  }
+
+  componentWillReceiveProps() {
+    this.state = { loadedItems: [] }
   }
 
   render() {
     return (
       <div className="feed">
-        <h1 className="app__h1">Photos</h1>
+        <h1 className="app__h1">{this.props.name}</h1>
         {this.state.loadedItems.map((item, i) =>
           <FeedItem
             imgPath={item.imgPath}
