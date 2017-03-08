@@ -1,0 +1,13 @@
+@import 'assets/css/variables';
+
+.footer {
+  opacity: 0.5;
+  padding-bottom: 50px;
+  padding-top: 30px;
+
+  &__h1 {
+    color: $blue;
+    font-weight: 400;
+    font-size: 12px;
+  }
+}

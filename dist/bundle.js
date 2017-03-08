@@ -11766,6 +11766,10 @@ var _Nav = __webpack_require__(208);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
+var _Footer = __webpack_require__(278);
+
+var _Footer2 = _interopRequireDefault(_Footer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -11804,7 +11808,8 @@ var Index = function (_Component) {
           imgPath: this.state.modalContent.imgPath,
           description: this.state.modalContent.description,
           renderModal: this.renderModal }),
-        this.props.children
+        this.props.children,
+        _react2.default.createElement(_Footer2.default, null)
       );
     }
   }]);
@@ -12268,7 +12273,7 @@ exports = module.exports = __webpack_require__(28)();
 
 
 // module
-exports.push([module.i, ".hidden {\n  display: none; }\n\nhtml, body {\n  margin: 0;\n  width: 100%;\n  height: 100%;\n  font-family: \"Proxima Nova\", \"Open Sans\", \"Helvetica\", sans-serif; }\n\n* {\n  box-sizing: border-box !important; }\n\n.nav2 {\n  display: flex;\n  align-items: center;\n  background: #4990E2;\n  font-size: 13px;\n  position: fixed;\n  top: 60px;\n  width: 100%;\n  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);\n  z-index: 1000; }\n  .nav2__block {\n    background: #01B2FF;\n    padding: 0px 25px 0px 40px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__block2 {\n    padding: 5px 20px 5px 10px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__avatar {\n    width: 40px;\n    height: 40px;\n    margin-right: 15px; }\n  .nav2__text {\n    color: #fff;\n    height: 100%;\n    margin-left: 5px; }\n", ""]);
+exports.push([module.i, ".hidden {\n  display: none; }\n\nhtml, body {\n  margin: 0;\n  width: 100%;\n  height: 100%;\n  font-family: \"Proxima Nova\", \"Open Sans\", \"Helvetica\", sans-serif; }\n\n* {\n  box-sizing: border-box !important; }\n\n.align-center {\n  text-align: center; }\n\n.nav2 {\n  display: flex;\n  align-items: center;\n  background: #4990E2;\n  font-size: 13px;\n  position: fixed;\n  top: 60px;\n  width: 100%;\n  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);\n  z-index: 1000; }\n  .nav2__block {\n    background: #01B2FF;\n    padding: 0px 25px 0px 40px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__block2 {\n    padding: 5px 20px 5px 10px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__avatar {\n    width: 40px;\n    height: 40px;\n    margin-right: 15px; }\n  .nav2__text {\n    color: #fff;\n    height: 100%;\n    margin-left: 5px; }\n", ""]);
 
 // exports
 
@@ -30110,6 +30115,128 @@ if(false) {
 	if(!content.locals) {
 		module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/sass-loader/lib/loader.js!./nav.scss", function() {
 			var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/sass-loader/lib/loader.js!./nav.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 278 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _footer = __webpack_require__(280);
+
+var _footer2 = _interopRequireDefault(_footer);
+
+var _react = __webpack_require__(19);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Footer = function (_Component) {
+  _inherits(Footer, _Component);
+
+  function Footer() {
+    _classCallCheck(this, Footer);
+
+    return _possibleConstructorReturn(this, (Footer.__proto__ || Object.getPrototypeOf(Footer)).apply(this, arguments));
+  }
+
+  _createClass(Footer, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'footer',
+        { className: 'footer align-center' },
+        _react2.default.createElement(
+          'svg',
+          { width: '60px', height: '60px', viewBox: '40 20 60 60', version: '1.1' },
+          _react2.default.createElement(
+            'g',
+            { id: 'Logo', stroke: 'none', strokeWidth: '1', fill: 'none', fillRule: 'evenodd', transform: 'translate(40.000000, 20.000000)' },
+            _react2.default.createElement('rect', { id: 'Rectangle-2', fill: '#4990E2', x: '0', y: '0', width: '60', height: '60' }),
+            _react2.default.createElement('rect', { id: 'Rectangle-3', fill: '#FFFFFF', x: '4.5', y: '4.5', width: '51', height: '51' }),
+            _react2.default.createElement(
+              'text',
+              { id: 'AW', fontFamily: 'Garamond', fontSize: '32', fontWeight: 'normal', letterSpacing: '-5', fill: '#4990E2' },
+              _react2.default.createElement(
+                'tspan',
+                { x: '6.72265625', y: '41' },
+                'A'
+              ),
+              _react2.default.createElement(
+                'tspan',
+                { x: '23.0664062', y: '41' },
+                'W'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'h1',
+          { className: 'footer__h1' },
+          'React / Ruby on Rails Consultant'
+        )
+      );
+    }
+  }]);
+
+  return Footer;
+}(_react.Component);
+
+exports.default = Footer;
+
+/***/ }),
+/* 279 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(28)();
+// imports
+
+
+// module
+exports.push([module.i, ".hidden {\n  display: none; }\n\n.footer {\n  opacity: 0.5;\n  padding-bottom: 50px;\n  padding-top: 30px; }\n  .footer__h1 {\n    color: #4990E2;\n    font-weight: 400;\n    font-size: 12px; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 280 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(279);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(33)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/sass-loader/lib/loader.js!./footer.scss", function() {
+			var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/sass-loader/lib/loader.js!./footer.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
