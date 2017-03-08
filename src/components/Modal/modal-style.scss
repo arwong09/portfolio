@@ -10,8 +10,16 @@
   padding: 30px;
   z-index: 1000;
 
+  &__container {
+    max-height: calc(100vh - 150px);
+    overflow-y: scroll;
+    box-shadow: -2px 2px 40px rgba(0,0,0,0.6);
+  }
+
   &__img {
     width: 100%;
+    height: 240px;
+    background-size: cover;
   }
 
   &__h1 {
@@ -31,6 +39,17 @@
     font-weight: 600;
     font-family: 'Garamond', serif;
     box-shadow: -1px 1px 8px rgba(0,0,0,0.2);
+  }
+
+  &__body {
+    background: #fff;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: $black;
+    font-family: 'Garamond', serif;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+    color: #333;
   }
 }
 

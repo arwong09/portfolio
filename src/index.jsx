@@ -23,9 +23,10 @@ class App extends Component {
           <Modal
             name={this.state.modalContent.name}
             imgPath={this.state.modalContent.imgPath}
-            description={this.state.modalContent.description} />
+            description={this.state.modalContent.description}
+            renderModal={this.renderModal} />
         }
-        <Feed items={ITEMS} renderModal={this.renderModal} />
+        <Feed items={ITEMS} renderModal={this.renderModal} className="modal-open" />
       </div>
     )
   }

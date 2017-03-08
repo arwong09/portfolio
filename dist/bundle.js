@@ -11796,7 +11796,7 @@ var Feed = function (_Component) {
         _react2.default.createElement(
           'h1',
           { className: 'app__h1' },
-          'Panoramas'
+          'Photos'
         ),
         this.state.loadedItems.map(function (item, i) {
           return _react2.default.createElement(_FeedItem2.default, {
@@ -24572,8 +24572,9 @@ var App = function (_Component) {
         this.state.modalContent && _react2.default.createElement(_Modal2.default, {
           name: this.state.modalContent.name,
           imgPath: this.state.modalContent.imgPath,
-          description: this.state.modalContent.description }),
-        _react2.default.createElement(_Feed2.default, { items: _items.ITEMS, renderModal: this.renderModal })
+          description: this.state.modalContent.description,
+          renderModal: this.renderModal }),
+        _react2.default.createElement(_Feed2.default, { items: _items.ITEMS, renderModal: this.renderModal, className: 'modal-open' })
       );
     }
   }]);
@@ -24662,10 +24663,18 @@ var Modal = function (_Component) {
   function Modal(props) {
     _classCallCheck(this, Modal);
 
-    return _possibleConstructorReturn(this, (Modal.__proto__ || Object.getPrototypeOf(Modal)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Modal.__proto__ || Object.getPrototypeOf(Modal)).call(this, props));
+
+    _this.handleClick = _this.handleClick.bind(_this);
+    return _this;
   }
 
   _createClass(Modal, [{
+    key: 'handleClick',
+    value: function handleClick() {
+      this.props.renderModal(null);
+    }
+  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
@@ -24678,13 +24687,31 @@ var Modal = function (_Component) {
           transitionLeaveTimeout: 200 },
         _react2.default.createElement(
           'div',
-          { className: 'modal' },
+          { className: 'modal', onClick: this.handleClick },
           _react2.default.createElement(
-            'h1',
-            { className: 'modal__h1' },
-            this.props.name
-          ),
-          _react2.default.createElement('img', { className: 'modal__img', src: this.props.imgPath })
+            'div',
+            { className: 'modal__container' },
+            _react2.default.createElement(
+              'h1',
+              { className: 'modal__h1' },
+              this.props.name
+            ),
+            _react2.default.createElement('div', { className: 'modal__img', style: { backgroundImage: 'url(' + this.props.imgPath + ')' } }),
+            _react2.default.createElement(
+              'div',
+              { className: 'modal__body' },
+              _react2.default.createElement(
+                'p',
+                null,
+                'Lorem Khaled Ipsum is a major key to success. Look at the sunset, life is amazing, life is beautiful, life is what you make it. To be successful you\u2019ve got to work hard, to make history, simple, you\u2019ve got to make it. They will try to close the door on you, just open it. To be successful you\u2019ve got to work hard, to make history, simple, you\u2019ve got to make it. To succeed you must believe. When you believe, you will succeed. Look at the sunset, life is amazing, life is beautiful, life is what you make it.'
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                'The other day the grass was brown, now it\u2019s green because I ain\u2019t give up. Never surrender. To be successful you\u2019ve got to work hard, to make history, simple, you\u2019ve got to make it. To succeed you must believe. When you believe, you will succeed. How\u2019s business? Boomin. It\u2019s on you how you want to live your life. Everyone has a choice. I pick my choice, squeaky clean. The key to more success is to have a lot of pillows. I told you all this before, when you have a swimming pool, do not use chlorine, use salt water, the healing, salt water is the healing.'
+              )
+            )
+          )
         )
       );
     }
@@ -24704,7 +24731,7 @@ exports = module.exports = __webpack_require__(28)();
 
 
 // module
-exports.push([module.i, ".hidden {\n  display: none; }\n\n.modal {\n  background: rgba(51, 51, 51, 0.75);\n  position: fixed;\n  top: 100px;\n  left: 0;\n  height: 100%;\n  width: 100%;\n  padding: 30px;\n  z-index: 1000; }\n  .modal__img {\n    width: 100%; }\n  .modal__h1 {\n    position: fixed;\n    top: 130px;\n    left: 40px;\n    background: #fafafa;\n    text-transform: uppercase;\n    color: #4A4A4A;\n    font-size: 16px;\n    text-align: center;\n    padding: 5px 15px;\n    border: 1px solid #4A4A4A;\n    border-radius: 2px;\n    letter-spacing: 1px;\n    opacity: 0.7;\n    font-weight: 600;\n    font-family: 'Garamond', serif;\n    box-shadow: -1px 1px 8px rgba(0, 0, 0, 0.2); }\n\n.modal-appear,\n.modal-enter {\n  opacity: 0.01; }\n\n.modal-appear.modal-appear-active,\n.modal-enter.modal-enter-active {\n  opacity: 1;\n  will-change: opacity;\n  transition: opacity 200ms ease-in; }\n\n.modal-leave {\n  opacity: 1; }\n\n.modal-leave.modal-leave-active {\n  opacity: 0.01;\n  transition: opacity 200ms ease-in; }\n", ""]);
+exports.push([module.i, ".hidden {\n  display: none; }\n\n.modal {\n  background: rgba(51, 51, 51, 0.75);\n  position: fixed;\n  top: 100px;\n  left: 0;\n  height: 100%;\n  width: 100%;\n  padding: 30px;\n  z-index: 1000; }\n  .modal__container {\n    max-height: calc(100vh - 150px);\n    overflow-y: scroll;\n    box-shadow: -2px 2px 40px rgba(0, 0, 0, 0.6); }\n  .modal__img {\n    width: 100%;\n    height: 240px;\n    background-size: cover; }\n  .modal__h1 {\n    position: fixed;\n    top: 130px;\n    left: 40px;\n    background: #fafafa;\n    text-transform: uppercase;\n    color: #4A4A4A;\n    font-size: 16px;\n    text-align: center;\n    padding: 5px 15px;\n    border: 1px solid #4A4A4A;\n    border-radius: 2px;\n    letter-spacing: 1px;\n    opacity: 0.7;\n    font-weight: 600;\n    font-family: 'Garamond', serif;\n    box-shadow: -1px 1px 8px rgba(0, 0, 0, 0.2); }\n  .modal__body {\n    background: #fff;\n    padding: 10px 20px;\n    font-size: 15px;\n    color: #4A4A4A;\n    font-family: 'Garamond', serif;\n    letter-spacing: 0.2px;\n    line-height: 24px;\n    color: #333; }\n\n.modal-appear,\n.modal-enter {\n  opacity: 0.01; }\n\n.modal-appear.modal-appear-active,\n.modal-enter.modal-enter-active {\n  opacity: 1;\n  will-change: opacity;\n  transition: opacity 200ms ease-in; }\n\n.modal-leave {\n  opacity: 1; }\n\n.modal-leave.modal-leave-active {\n  opacity: 0.01;\n  transition: opacity 200ms ease-in; }\n", ""]);
 
 // exports
 
