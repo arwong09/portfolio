@@ -1,6 +1,8 @@
+import style from './nav.scss'
 import React from 'react'
+import { Link } from 'react-router'
 
-const Nav = ({ viewPortfolio }) => {
+const Nav = () => {
 return (
 <nav className="nav">
   <svg width="40px" height="40px" viewBox="40 20 40 40" version="1.1">
@@ -15,12 +17,12 @@ return (
   </svg>
 
   <div className="nav__buttons">
-    <a className="nav__button" onClick={viewPortfolio}>
+    <Link to="/portfolio" className="nav__button">
       Portfolio
-    </a>
-    <a className="nav__button">
+    </Link>
+    <Link to="/" className="nav__button">
       Photos
-    </a>
+    </Link>
   </div>
 
   <div className="nav__socials">
@@ -39,5 +41,4 @@ return (
   </div>
 </nav>
 )}
-
 export default Nav
