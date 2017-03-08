@@ -19,7 +19,7 @@ html, body {
   position: fixed;
   top: 60px;
   width: 100%;
-  box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0px 8px rgba(0,0,0,0.3);
   z-index: 1000;
 
   &__block {
@@ -45,15 +45,5 @@ html, body {
     color: #fff;
     height: 100%;
     margin-left: 5px;
-  }
-}
-
-.app {
-  &__h1 {
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: $blue;
-    margin: 30px 0;
   }
 }

@@ -24,7 +24,7 @@ export default class Feed extends Component {
   render() {
     return (
       <div className="feed">
-        <h1 className="app__h1">{this.props.name}</h1>
+        <h1 className="feed__h1">{this.props.name}</h1>
         {this.state.loadedItems.map((item, i) =>
           <FeedItem
             imgPath={item.imgPath}

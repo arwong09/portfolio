@@ -1,15 +1,14 @@
-// import style from '../assets/css/main.scss'
+import style from './index.scss'
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
 import { PORTFOLIO } from 'data/items.js'
 import Feed from 'components/Feed/Feed.jsx'
 import Modal from 'components/Modal/Modal.jsx'
 import Nav from 'views/Page/components/Nav/Nav.jsx'
 
-export default class Portfolio extends Component {
+export default class Index extends Component {
   constructor(props) {
     super(props)
-    this.state = { modalContent: null, view: 'photos' }
+    this.state = { modalContent: null }
     this.renderModal = this.renderModal.bind(this)
   }
 
@@ -19,7 +18,7 @@ export default class Portfolio extends Component {
 
   render() {
     return(
-      <div className="app">
+      <div className="index">
         <Nav />
         {this.state.modalContent &&
           <Modal
@@ -28,7 +27,7 @@ export default class Portfolio extends Component {
             description={this.state.modalContent.description}
             renderModal={this.renderModal} />
         }
-          <Feed items={PORTFOLIO} name="Portfolio" renderModal={this.renderModal} />
+        {this.props.children}
       </div>
     )
   }
