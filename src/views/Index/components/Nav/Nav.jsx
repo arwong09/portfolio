@@ -26,16 +26,16 @@ return (
   </div>
 
   <div className="nav__socials">
-    <a className="nav__social">
+    <a className="nav__social" href="https://medium.com/@andrewwong" target="_blank">
       <span className="fa fa-medium"></span>
     </a>
-    <a className="nav__social">
+    <a className="nav__social" href="https://linkedin.com/in/arwong09" target="_blank">
       <span className="fa fa-linkedin"></span>
     </a>
-    <a className="nav__social">
+    <a className="nav__social" href="https://github.com/arwong09" target="_blank">
       <span className="fa fa-github"></span>
     </a>
-    <a className="nav__social">
+    <a className="nav__social" href="mailto:arwong09@gmail.com">
       <span className="fa fa-envelope"></span>
     </a>
   </div>

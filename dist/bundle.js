@@ -11762,7 +11762,7 @@ var _Modal = __webpack_require__(99);
 
 var _Modal2 = _interopRequireDefault(_Modal);
 
-var _Nav = __webpack_require__(269);
+var _Nav = __webpack_require__(208);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -24822,7 +24822,99 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 ), document.getElementById('root'));
 
 /***/ }),
-/* 208 */,
+/* 208 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _nav = __webpack_require__(277);
+
+var _nav2 = _interopRequireDefault(_nav);
+
+var _react = __webpack_require__(19);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouter = __webpack_require__(240);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Nav = function Nav() {
+  return _react2.default.createElement(
+    'nav',
+    { className: 'nav' },
+    _react2.default.createElement(
+      'svg',
+      { width: '40px', height: '40px', viewBox: '40 20 40 40', version: '1.1' },
+      _react2.default.createElement(
+        'g',
+        { id: 'Logo', stroke: 'none', strokeWidth: '1', fill: 'none', fillRule: 'evenodd', transform: 'translate(40.000000, 20.000000)' },
+        _react2.default.createElement('rect', { id: 'Rectangle-2', fill: '#4990E2', x: '0', y: '0', width: '40', height: '40' }),
+        _react2.default.createElement('rect', { id: 'Rectangle-3', fill: '#FFFFFF', x: '3', y: '3', width: '34', height: '34' }),
+        _react2.default.createElement(
+          'text',
+          { id: 'AW', fontFamily: 'Garamond', fontSize: '21', fontWeight: 'normal', letterSpacing: '-2', fill: '#4990E2' },
+          _react2.default.createElement(
+            'tspan',
+            { x: '4.5361816', y: '27' },
+            'A'
+          ),
+          _react2.default.createElement(
+            'tspan',
+            { x: '16.1904541', y: '27' },
+            'W'
+          )
+        )
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'nav__buttons' },
+      _react2.default.createElement(
+        _reactRouter.Link,
+        { to: '/portfolio', className: 'nav__button' },
+        'Portfolio'
+      ),
+      _react2.default.createElement(
+        _reactRouter.Link,
+        { to: '/', className: 'nav__button' },
+        'Photos'
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'nav__socials' },
+      _react2.default.createElement(
+        'a',
+        { className: 'nav__social', href: 'https://medium.com/@andrewwong', target: '_blank' },
+        _react2.default.createElement('span', { className: 'fa fa-medium' })
+      ),
+      _react2.default.createElement(
+        'a',
+        { className: 'nav__social', href: 'https://linkedin.com/in/arwong09', target: '_blank' },
+        _react2.default.createElement('span', { className: 'fa fa-linkedin' })
+      ),
+      _react2.default.createElement(
+        'a',
+        { className: 'nav__social', href: 'https://github.com/arwong09', target: '_blank' },
+        _react2.default.createElement('span', { className: 'fa fa-github' })
+      ),
+      _react2.default.createElement(
+        'a',
+        { className: 'nav__social', href: 'mailto:arwong09@gmail.com' },
+        _react2.default.createElement('span', { className: 'fa fa-envelope' })
+      )
+    )
+  );
+};
+exports.default = Nav;
+
+/***/ }),
 /* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -29978,6 +30070,46 @@ if(false) {
 	if(!content.locals) {
 		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./index.scss", function() {
 			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/sass-loader/lib/loader.js!./index.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 276 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(28)();
+// imports
+
+
+// module
+exports.push([module.i, ".hidden {\n  display: none; }\n\n.nav {\n  padding: 10px 40px;\n  display: flex;\n  align-items: center;\n  position: fixed;\n  background: #fff;\n  top: 0;\n  width: 100%;\n  z-index: 1000; }\n  .nav__buttons {\n    display: inline-flex;\n    align-items: center;\n    height: 100%;\n    margin: 0 10px; }\n  .nav__button {\n    width: 120px;\n    text-transform: uppercase;\n    color: #777;\n    text-align: center;\n    font-size: 14px;\n    cursor: pointer;\n    text-decoration: none; }\n    .nav__button:hover {\n      color: #4A4A4A;\n      transition: 150ms;\n      transition-timing-function: ease-in;\n      will-change: filter transform;\n      -webkit-transition: 150ms;\n      -webkit-transition-timing-function: ease-in; }\n  .nav__socials {\n    display: inline-flex;\n    align-items: center;\n    margin: 0 10px; }\n  .nav__social {\n    padding: 0 15px;\n    color: #01B2FF;\n    cursor: pointer;\n    font-size: 16px;\n    transition: 150ms;\n    transition-timing-function: ease-in;\n    will-change: filter transform;\n    -webkit-transition: 150ms;\n    -webkit-transition-timing-function: ease-in; }\n    .nav__social:hover {\n      color: #42D6FF; }\n\nsvg {\n  cursor: pointer; }\n\nsvg:hover #Rectangle-2, svg:hover text {\n  fill: #42D6FF;\n  transition: 150ms;\n  transition-timing-function: ease-in;\n  will-change: filter transform;\n  -webkit-transition: 150ms;\n  -webkit-transition-timing-function: ease-in; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 277 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(276);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(33)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/sass-loader/lib/loader.js!./nav.scss", function() {
+			var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/sass-loader/lib/loader.js!./nav.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
