@@ -11,6 +11,7 @@ render(
     <Route path="/" component={Index}>
       <IndexRoute component={Photos} />
       <Route path="portfolio" component={Portfolio} />
+      <Route path="*" component={Photos} />
     </Route>
   </Router>
 , document.getElementById('root'))

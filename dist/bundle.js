@@ -30232,7 +30232,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     _reactRouter.Route,
     { path: '/', component: _Index2.default },
     _react2.default.createElement(_reactRouter.IndexRoute, { component: _Photos2.default }),
-    _react2.default.createElement(_reactRouter.Route, { path: 'portfolio', component: _Portfolio2.default })
+    _react2.default.createElement(_reactRouter.Route, { path: 'portfolio', component: _Portfolio2.default }),
+    _react2.default.createElement(_reactRouter.Route, { path: '*', component: _Photos2.default })
   )
 ), document.getElementById('root'));
 
