@@ -11904,11 +11904,6 @@ var Feed = function (_Component) {
       this.loadingItem ? this.loadingItem.animate() : null;
     }
   }, {
-    key: 'componentWillReceiveProps',
-    value: function componentWillReceiveProps(nextProps) {
-      // this.state = { loadedItems: [] }
-    }
-  }, {
     key: 'render',
     value: function render() {
       var _this2 = this;
@@ -12234,9 +12229,6 @@ var PHOTOS = exports.PHOTOS = [{
   name: 'Atacama Field',
   imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/atacama-field-c.jpg'
 }, {
-  name: 'Atacama Sunset',
-  imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/atacama-sunset-c.jpg'
-}, {
   name: 'Candlestick Park',
   imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/att-park-c.jpg'
 }, {
@@ -12264,6 +12256,11 @@ var PORTFOLIO = exports.PORTFOLIO = [{
   imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/atacama-salt-flat-c.jpg'
 }];
 
+// {
+//   name: 'Atacama Sunset',
+//   imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/atacama-sunset-c.jpg'
+// }
+
 /***/ }),
 /* 101 */
 /***/ (function(module, exports, __webpack_require__) {
@@ -12273,7 +12270,7 @@ exports = module.exports = __webpack_require__(28)();
 
 
 // module
-exports.push([module.i, ".hidden {\n  display: none; }\n\nhtml, body {\n  margin: 0;\n  width: 100%;\n  height: 100%;\n  font-family: \"Proxima Nova\", \"Open Sans\", \"Helvetica\", sans-serif; }\n\n* {\n  box-sizing: border-box !important; }\n\n.align-center {\n  text-align: center; }\n\n.nav2 {\n  display: flex;\n  align-items: center;\n  background: #4990E2;\n  font-size: 13px;\n  position: fixed;\n  top: 60px;\n  width: 100%;\n  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);\n  z-index: 1000; }\n  .nav2__block {\n    background: #01B2FF;\n    padding: 0px 25px 0px 40px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__block2 {\n    padding: 5px 20px 5px 10px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__avatar {\n    width: 40px;\n    height: 40px;\n    margin-right: 15px; }\n  .nav2__text {\n    color: #fff;\n    height: 100%;\n    margin-left: 5px; }\n", ""]);
+exports.push([module.i, ".hidden {\n  display: none; }\n\nhtml, body {\n  margin: 0;\n  width: 100%;\n  height: 100%;\n  font-family: \"Proxima Nova\", \"Open Sans\", \"Helvetica\", sans-serif; }\n\n* {\n  box-sizing: border-box !important; }\n\n.align-center {\n  text-align: center; }\n\n.nav2 {\n  display: flex;\n  align-items: center;\n  background: #4990E2;\n  font-size: 13px;\n  position: fixed;\n  top: 60px;\n  width: 100%;\n  box-shadow: 0 0px 8px rgba(0, 0, 0, 0.3);\n  z-index: 1000; }\n  .nav2__block {\n    background: #01B2FF;\n    padding: 0px 25px 0px 40px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__block2 {\n    padding: 5px 20px 5px 10px;\n    align-items: center;\n    display: inline-flex; }\n  .nav2__avatar {\n    width: 40px;\n    height: 40px;\n    margin-right: 15px; }\n  .nav2__text {\n    color: #fff;\n    height: 100%;\n    margin-left: 5px; }\n\n@media screen and (min-width: 1px) and (max-width: 590px) {\n  body .nav2__block {\n    padding: 0px 25px 0px 10px; }\n  body .nav2__block2 {\n    display: none; } }\n", ""]);
 
 // exports
 
@@ -12287,7 +12284,7 @@ exports = module.exports = __webpack_require__(28)();
 
 
 // module
-exports.push([module.i, ".hidden {\n  display: none; }\n\n.feed__item {\n  cursor: pointer;\n  position: relative;\n  margin-bottom: 30px; }\n  .feed__item:hover .feed__item__img {\n    filter: brightness(1);\n    transition: 200ms;\n    transition-timing-function: ease-in;\n    will-change: filter transform;\n    -webkit-transition: 200ms;\n    -webkit-transition-timing-function: ease-in; }\n  .feed__item__h2 {\n    font-size: 16px;\n    text-transform: uppercase;\n    color: #fff;\n    font-weight: 400;\n    margin: 20px 0 0 0;\n    position: absolute;\n    bottom: 5px;\n    left: 10px;\n    letter-spacing: 0.6px;\n    font-size: 15px; }\n  .feed__item__img {\n    position: relative;\n    height: 180px;\n    width: 100%;\n    filter: brightness(0.6);\n    background-size: 100% auto;\n    background-position: 0 -20px;\n    border-radius: 3px; }\n\n.item-appear,\n.item-enter {\n  opacity: 0.01;\n  transform: translateY(2px); }\n\n.item-appear.item-appear-active,\n.item-enter.item-enter-active {\n  opacity: 1;\n  transform: translateY(0);\n  will-change: transform opacity;\n  transition: all 500ms ease-out; }\n\n.item-leave {\n  opacity: 1; }\n\n.item-leave.item-leave-active {\n  opacity: 0.01;\n  transition: opacity 300ms ease-out; }\n", ""]);
+exports.push([module.i, ".hidden {\n  display: none; }\n\n.feed__item {\n  cursor: pointer;\n  position: relative;\n  margin-bottom: 30px; }\n  .feed__item:hover .feed__item__img {\n    filter: brightness(1);\n    transition: 200ms;\n    transition-timing-function: ease-in;\n    will-change: filter transform;\n    -webkit-transition: 200ms;\n    -webkit-transition-timing-function: ease-in; }\n  .feed__item__h2 {\n    font-size: 16px;\n    text-transform: uppercase;\n    color: #fff;\n    font-weight: 400;\n    margin: 20px 0 0 0;\n    position: absolute;\n    bottom: 5px;\n    left: 10px;\n    letter-spacing: 0.6px;\n    font-size: 15px; }\n  .feed__item__img {\n    position: relative;\n    height: 180px;\n    width: 100%;\n    filter: brightness(0.6);\n    background-size: 100% auto;\n    background-position: 0 -20px;\n    border-radius: 3px; }\n\n.item-appear,\n.item-enter {\n  opacity: 0.01;\n  transform: translateY(2px); }\n\n.item-appear.item-appear-active,\n.item-enter.item-enter-active {\n  opacity: 1;\n  transform: translateY(0);\n  will-change: transform opacity;\n  transition: all 500ms ease-out; }\n\n.item-leave {\n  opacity: 1; }\n\n.item-leave.item-leave-active {\n  opacity: 0.01;\n  transition: opacity 300ms ease-out; }\n\n@media screen and (min-width: 1px) and (max-width: 1000px) {\n  .feed__item__img {\n    background-size: auto 115%;\n    background-position: 0 -10px; } }\n\n@media screen and (min-width: 1px) and (max-width: 590px) {\n  .feed__item {\n    margin-bottom: 15px; }\n    .feed__item__img {\n      background-size: auto 115%;\n      background-position: 0 -10px;\n      height: 120px; } }\n", ""]);
 
 // exports
 
@@ -24928,7 +24925,7 @@ exports = module.exports = __webpack_require__(28)();
 
 
 // module
-exports.push([module.i, ".hidden {\n  display: none; }\n\n.feed {\n  padding-top: 100px;\n  max-width: 1200px;\n  margin: 0 auto; }\n  .feed__h1 {\n    font-size: 16px;\n    text-transform: uppercase;\n    font-weight: 600;\n    color: #4990E2;\n    margin: 30px 0; }\n", ""]);
+exports.push([module.i, ".hidden {\n  display: none; }\n\n.feed {\n  padding: 100px 40px 0 40px;\n  max-width: 1200px;\n  margin: 0 auto; }\n  .feed__h1 {\n    font-size: 16px;\n    text-transform: uppercase;\n    font-weight: 600;\n    color: #4990E2;\n    margin: 30px 0; }\n\n@media screen and (min-width: 1px) and (max-width: 590px) {\n  body .feed {\n    padding: 100px 10px 0 10px; }\n    body .feed__h1 {\n      margin: 15px 0; } }\n", ""]);
 
 // exports
 
@@ -30092,7 +30089,7 @@ exports = module.exports = __webpack_require__(28)();
 
 
 // module
-exports.push([module.i, ".hidden {\n  display: none; }\n\n.nav {\n  padding: 10px 40px;\n  display: flex;\n  align-items: center;\n  position: fixed;\n  background: #fff;\n  top: 0;\n  width: 100%;\n  z-index: 1000; }\n  .nav__buttons {\n    display: inline-flex;\n    align-items: center;\n    height: 100%;\n    margin: 0 10px; }\n  .nav__button {\n    width: 120px;\n    text-transform: uppercase;\n    color: #777;\n    text-align: center;\n    font-size: 14px;\n    cursor: pointer;\n    text-decoration: none; }\n    .nav__button:hover {\n      color: #4A4A4A;\n      transition: 150ms;\n      transition-timing-function: ease-in;\n      will-change: filter transform;\n      -webkit-transition: 150ms;\n      -webkit-transition-timing-function: ease-in; }\n  .nav__socials {\n    display: inline-flex;\n    align-items: center;\n    margin: 0 10px; }\n  .nav__social {\n    padding: 0 15px;\n    color: #01B2FF;\n    cursor: pointer;\n    font-size: 16px;\n    transition: 150ms;\n    transition-timing-function: ease-in;\n    will-change: filter transform;\n    -webkit-transition: 150ms;\n    -webkit-transition-timing-function: ease-in; }\n    .nav__social:hover {\n      color: #42D6FF; }\n\nsvg {\n  cursor: pointer; }\n\nsvg:hover #Rectangle-2, svg:hover text {\n  fill: #42D6FF;\n  transition: 150ms;\n  transition-timing-function: ease-in;\n  will-change: filter transform;\n  -webkit-transition: 150ms;\n  -webkit-transition-timing-function: ease-in; }\n", ""]);
+exports.push([module.i, ".hidden {\n  display: none; }\n\n.nav {\n  padding: 10px 40px;\n  display: flex;\n  align-items: center;\n  position: fixed;\n  background: #fff;\n  top: 0;\n  width: 100%;\n  z-index: 1000; }\n  .nav__buttons {\n    display: inline-flex;\n    align-items: center;\n    height: 100%;\n    margin: 0 10px; }\n  .nav__button {\n    width: 120px;\n    text-transform: uppercase;\n    color: #777;\n    text-align: center;\n    font-size: 14px;\n    cursor: pointer;\n    text-decoration: none; }\n    .nav__button:hover {\n      color: #4A4A4A;\n      transition: 150ms;\n      transition-timing-function: ease-in;\n      will-change: filter transform;\n      -webkit-transition: 150ms;\n      -webkit-transition-timing-function: ease-in; }\n  .nav__socials {\n    display: inline-flex;\n    align-items: center;\n    margin: 0 10px; }\n  .nav__social {\n    padding: 0 15px;\n    color: #01B2FF;\n    cursor: pointer;\n    font-size: 16px;\n    transition: 150ms;\n    transition-timing-function: ease-in;\n    will-change: filter transform;\n    -webkit-transition: 150ms;\n    -webkit-transition-timing-function: ease-in; }\n    .nav__social:hover {\n      color: #42D6FF; }\n\nsvg {\n  cursor: pointer; }\n\nsvg:hover #Rectangle-2, svg:hover text {\n  fill: #42D6FF;\n  transition: 150ms;\n  transition-timing-function: ease-in;\n  will-change: filter transform;\n  -webkit-transition: 150ms;\n  -webkit-transition-timing-function: ease-in; }\n\n@media screen and (min-width: 1px) and (max-width: 590px) {\n  body .nav {\n    padding: 10px 10px; }\n    body .nav__socials {\n      display: none; } }\n", ""]);
 
 // exports
 
@@ -30214,7 +30211,7 @@ exports = module.exports = __webpack_require__(28)();
 
 
 // module
-exports.push([module.i, ".hidden {\n  display: none; }\n\n.footer {\n  opacity: 0.5;\n  padding-bottom: 50px;\n  padding-top: 30px; }\n  .footer__h1 {\n    color: #4990E2;\n    font-weight: 400;\n    font-size: 12px; }\n", ""]);
+exports.push([module.i, ".hidden {\n  display: none; }\n\n.footer {\n  opacity: 0.5;\n  padding-bottom: 40px;\n  padding-top: 20px; }\n  .footer__h1 {\n    color: #4990E2;\n    font-weight: 400;\n    font-size: 12px; }\n", ""]);
 
 // exports
 

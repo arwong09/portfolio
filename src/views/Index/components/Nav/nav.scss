@@ -59,3 +59,13 @@ svg:hover #Rectangle-2, svg:hover text {
   fill: $lightblue-hl;
   @include transition;
 }
+
+@media screen and (min-width: 1px) and (max-width: 590px) {
+  body .nav {
+    padding: 10px 10px;
+
+    &__socials {
+      display: none;
+    }
+  }
+}

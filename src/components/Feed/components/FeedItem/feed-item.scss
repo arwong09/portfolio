@@ -58,3 +58,24 @@
   opacity: 0.01;
   transition: opacity 300ms ease-out;
 }
+
+@media screen and (min-width: 1px) and (max-width: 1000px) {
+  .feed__item {
+    &__img {
+      background-size: auto 115%;
+      background-position: 0 -10px;
+    }
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 590px) {
+  .feed__item {
+    margin-bottom: 15px;
+
+    &__img {
+      background-size: auto 115%;
+      background-position: 0 -10px;
+      height: 120px;
+    }
+  }
+}

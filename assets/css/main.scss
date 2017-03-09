@@ -51,3 +51,15 @@ html, body {
     margin-left: 5px;
   }
 }
+
+@media screen and (min-width: 1px) and (max-width: 590px) {
+  body .nav2 {
+    &__block {
+      padding: 0px 25px 0px 10px;
+    }
+
+    &__block2 {
+      display: none;
+    }
+  }
+}

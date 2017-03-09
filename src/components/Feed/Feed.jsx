@@ -17,10 +17,6 @@ export default class Feed extends Component {
     this.loadingItem ? this.loadingItem.animate() : null
   }
 
-  componentWillReceiveProps(nextProps) {
-    // this.state = { loadedItems: [] }
-  }
-
   render() {
     return (
       <div className="feed">

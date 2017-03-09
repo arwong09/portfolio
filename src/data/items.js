@@ -9,9 +9,6 @@ export const PHOTOS = [
     name: 'Atacama Field',
     imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/atacama-field-c.jpg'
   }, {
-    name: 'Atacama Sunset',
-    imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/atacama-sunset-c.jpg'
-  }, {
     name: 'Candlestick Park',
     imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/att-park-c.jpg'
   }, {
@@ -41,3 +38,8 @@ export const PORTFOLIO = [
     imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/atacama-salt-flat-c.jpg'
   }
 ]
+
+// {
+//   name: 'Atacama Sunset',
+//   imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/atacama-sunset-c.jpg'
+// }
