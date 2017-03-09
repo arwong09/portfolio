@@ -12,4 +12,5 @@ render(
       <IndexRoute component={Photos} />
       <Route path="portfolio" component={Portfolio} />
     </Route>
-  </Router>, document.getElementById('root'))
+  </Router>
+, document.getElementById('root'))

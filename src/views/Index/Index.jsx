@@ -4,6 +4,7 @@ import { PORTFOLIO } from 'data/items.js'
 import Feed from 'components/Feed/Feed.jsx'
 import Modal from 'components/Modal/Modal.jsx'
 import Nav from 'views/Index/components/Nav/Nav.jsx'
+import Nav2 from 'views/Index/components/Nav2/Nav2.jsx'
 import Footer from 'views/Index/components/Footer/Footer.jsx'
 
 export default class Index extends Component {
@@ -21,6 +22,7 @@ export default class Index extends Component {
     return(
       <div className="index">
         <Nav />
+        <Nav2 />
         {this.state.modalContent &&
           <Modal
             name={this.state.modalContent.name}

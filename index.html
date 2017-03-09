@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>React & Rails Software Consultant</title>
+  <link rel="stylesheet" href="assets/css/preloading.css">
   <link rel="stylesheet" href="assets/css/vendor/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/png" href="./favicon.png">
   <meta charset="utf-8">
@@ -39,39 +40,23 @@
   <!-- End of Async Drift Code -->
 </head>
 <body>
-
-
-  <nav class="nav2">
-    <div class="nav2__block">
-      <img class="nav2__avatar" src="assets/images/andrew-wong.jpg" />
-      <div class="nav2__text">
-        Andrew Wong
+  <main id="root">
+    <div class="preloading">
+      <div>
+        <svg width="60px" height="60px" viewBox="40 20 60 60" version="1.1">
+          <g id="Logo" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" transform="translate(40.000000, 20.000000)">
+            <rect id="Rectangle-2" fill="#4990E2" x="0" y="0" width="60" height="60"></rect>
+            <rect id="Rectangle-3" fill="#FFFFFF" x="4.5" y="4.5" width="51" height="51"></rect>
+            <text id="AW" font-family="Garamond" font-size="32" font-weight="normal" letterSpacing="-5" fill="#4990E2">
+                <tspan x="6.72265625" y="41">A</tspan>
+                <tspan x="23.0664062" y="41">W</tspan>
+            </text>
+          </g>
+        </svg>
+        <h1 className="footer__h1">React / Ruby on Rails Consultant</h1>
       </div>
     </div>
-
-    <div class="nav2__block2">
-      <div class="nav2__text">
-        Software Engineering Consultant - React / Ruby on Rails
-      </div>
-    </div>
-
-    <div class="nav2__socials">
-      <a class="nav2__social" href="https://medium.com/@andrewwong" target="_blank">
-        <span class="fa fa-medium"></span>
-      </a>
-      <a class="nav2__social" href="https://linkedin.com/in/arwong09" target="_blank">
-        <span class="fa fa-linkedin"></span>
-      </a>
-      <a class="nav2__social" href="https://github.com/arwong09" target="_blank">
-        <span class="fa fa-github"></span>
-      </a>
-      <a class="nav2__social" href="mailto:arwong09@gmail.com">
-        <span class="fa fa-envelope"></span>
-      </a>
-    </div>
-  </nav>
-
-  <main id="root"></main>
+  </main>
   <script src="dist/bundle.js"></script>
 </body>
 </html>
