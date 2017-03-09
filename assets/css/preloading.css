@@ -13,11 +13,12 @@
   justify-content: center;
 }
 
-h1 {
+.preloading h1 {
   color: #4990E2;
   font-weight: 400;
   font-size: 12px;
   animation: preloading 0.6s infinite;
+  font-family: 'Open Sans';
 }
 
 @keyframes preloading {
