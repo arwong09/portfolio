@@ -14821,6 +14821,10 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _portfolio = __webpack_require__(279);
+
+var _portfolio2 = _interopRequireDefault(_portfolio);
+
 var _react = __webpack_require__(5);
 
 var _react2 = _interopRequireDefault(_react);
@@ -14859,7 +14863,224 @@ var Portfolio = function (_Component) {
   _createClass(Portfolio, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement(_Feed2.default, { items: _items.PORTFOLIO, name: 'Portfolio', renderModal: this.renderModal });
+      return _react2.default.createElement(
+        'div',
+        { className: 'portfolio' },
+        _react2.default.createElement(
+          'h1',
+          { className: 'portfolio__h1' },
+          'Past Clients'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'portfolio__row' },
+          _react2.default.createElement(
+            'div',
+            { className: 'col-md-3' },
+            _react2.default.createElement(
+              'div',
+              { className: 'portfolio__client' },
+              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/bleacherreport.png' })
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-md-3' },
+            _react2.default.createElement(
+              'div',
+              { className: 'portfolio__client' },
+              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/startupchile.png' })
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-md-3' },
+            _react2.default.createElement(
+              'div',
+              { className: 'portfolio__client' },
+              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/zaetae.png' })
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-md-3' },
+            _react2.default.createElement(
+              'div',
+              { className: 'portfolio__client' },
+              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/humblee.png' })
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'h1',
+          { className: 'portfolio__h1' },
+          'Expertise'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'portfolio__expertise' },
+          _react2.default.createElement(
+            'div',
+            { className: 'portfolio__expertise__img-container' },
+            _react2.default.createElement('img', { className: 'portfolio__expertise__img', src: 'assets/images/react.png' })
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'portfolio__expertise__img-container' },
+            _react2.default.createElement('img', { className: 'portfolio__expertise__img', src: 'assets/images/ruby-on-rails.png' })
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'portfolio__expertise__img-container' },
+            _react2.default.createElement('img', { className: 'portfolio__expertise__img', src: 'assets/images/aws.png' })
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'portfolio__expertise__img-container' },
+            _react2.default.createElement('img', { className: 'portfolio__expertise__img', src: 'assets/images/heroku.png' })
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'portfolio__expertise__img-container' },
+            _react2.default.createElement('img', { className: 'portfolio__expertise__img', src: 'assets/images/postgresql.png' })
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'portfolio__row' },
+          _react2.default.createElement(
+            'div',
+            { className: 'col-md-4' },
+            _react2.default.createElement(
+              'div',
+              { className: 'portfolio__service' },
+              _react2.default.createElement('div', { className: 'portfolio__service__img', style: { backgroundImage: 'url(assets/images/bleacherreport.png' } }),
+              _react2.default.createElement(
+                'h1',
+                { className: 'portfolio__service__h1' },
+                'Single Page Applications'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-md-4' },
+            _react2.default.createElement(
+              'div',
+              { className: 'portfolio__service' },
+              _react2.default.createElement('div', { className: 'portfolio__service__img', style: { backgroundImage: 'url(assets/images/bleacherreport.png' } }),
+              _react2.default.createElement(
+                'h1',
+                { className: 'portfolio__service__h1' },
+                'Client Side Performance'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-md-4' },
+            _react2.default.createElement(
+              'div',
+              { className: 'portfolio__service' },
+              _react2.default.createElement('div', { className: 'portfolio__service__img', style: { backgroundImage: 'url(assets/images/bleacherreport.png' } }),
+              _react2.default.createElement(
+                'h1',
+                { className: 'portfolio__service__h1' },
+                'Scalable Databases & API'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'h1',
+          { className: 'portfolio__h1' },
+          'More Clients'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'portfolio__row' },
+          _react2.default.createElement(
+            'div',
+            { className: 'col-md-3' },
+            _react2.default.createElement(
+              'div',
+              { className: 'portfolio__client' },
+              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/bleacherreport.png' })
+            ),
+            _react2.default.createElement(
+              'h1',
+              { className: 'portfolio__client__h1' },
+              'Bleacher Report'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-md-3' },
+            _react2.default.createElement(
+              'div',
+              { className: 'portfolio__client' },
+              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/bleacherreport.png' })
+            ),
+            _react2.default.createElement(
+              'h1',
+              { className: 'portfolio__client__h1' },
+              'Bleacher Report'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-md-3' },
+            _react2.default.createElement(
+              'div',
+              { className: 'portfolio__client' },
+              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/bleacherreport.png' })
+            ),
+            _react2.default.createElement(
+              'h1',
+              { className: 'portfolio__client__h1' },
+              'Bleacher Report'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-md-3' },
+            _react2.default.createElement(
+              'div',
+              { className: 'portfolio__client' },
+              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/bleacherreport.png' })
+            ),
+            _react2.default.createElement(
+              'h1',
+              { className: 'portfolio__client__h1' },
+              'Bleacher Report'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'h1',
+          { className: 'portfolio__h1' },
+          'Recommendations'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'portfolio__recommendation' },
+          _react2.default.createElement('img', { className: 'portfolio__recommendation__img', src: 'assets/images/doug.jpg' }),
+          _react2.default.createElement(
+            'div',
+            { className: 'portfolio__recommendation__body' },
+            _react2.default.createElement(
+              'p',
+              { className: 'portfolio__recommendation__p' },
+              '"Andrew is a skilled JavaScript developer with a keen eye for aesthetics and clearly-written, performant code. He is passionate about working on big ideas and technology that has a strong social impact."'
+            ),
+            _react2.default.createElement(
+              'h2',
+              { className: 'portfolio__recommendation__h2' },
+              '-Douglas Mill'
+            )
+          )
+        )
+      );
     }
   }]);
 
@@ -30242,6 +30463,46 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     _react2.default.createElement(_reactRouter.Route, { path: '*', component: _Photos2.default })
   )
 ), document.getElementById('root'));
+
+/***/ }),
+/* 278 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(16)();
+// imports
+
+
+// module
+exports.push([module.i, ".hidden {\n  display: none; }\n\n.portfolio {\n  padding: 100px 40px 0 40px;\n  max-width: 1200px;\n  margin: 0 auto; }\n  .portfolio__h1 {\n    font-size: 16px;\n    text-transform: uppercase;\n    font-weight: 600;\n    color: #4990E2;\n    margin: 30px 0 15px 0; }\n  .portfolio__row {\n    display: flex;\n    justify-content: center;\n    margin-bottom: 40px; }\n  .portfolio__client {\n    background: #fff;\n    width: 100%;\n    border-radius: 3px; }\n    .portfolio__client:not(:first-child) {\n      margin-left: 40px; }\n    .portfolio__client__img {\n      width: 100%;\n      height: 150px; }\n    .portfolio__client__h1 {\n      font-size: 16px;\n      font-family: 'Open Sans';\n      font-weight: 400;\n      color: #4A4A4A; }\n  .portfolio__service {\n    width: 100%; }\n    .portfolio__service:not(:first-child) {\n      margin-left: 40px; }\n    .portfolio__service__img {\n      width: 100%;\n      height: 180px;\n      border-radius: 3px;\n      border: 1px solid #4990E2;\n      background-size: cover;\n      background-position: 0 -50px; }\n    .portfolio__service__h1 {\n      font-size: 16px;\n      font-family: 'Open Sans';\n      font-weight: 400;\n      color: #4A4A4A; }\n  .portfolio__expertise {\n    border-radius: 3px;\n    width: 100%;\n    height: 120px;\n    color: #fff;\n    margin-bottom: 30px;\n    padding: 10px;\n    display: flex;\n    justify-content: center; }\n    .portfolio__expertise__h2 {\n      font-size: 16px;\n      margin-right: 20px; }\n    .portfolio__expertise__p {\n      text-align: left; }\n    .portfolio__expertise__body {\n      text-align: right; }\n    .portfolio__expertise__img-container {\n      flex-grow: 1;\n      display: flex;\n      justify-content: center;\n      height: 100%; }\n    .portfolio__expertise__img {\n      height: 100%; }\n  .portfolio__recommendation {\n    background: #4A4A4A;\n    border-radius: 3px;\n    width: 100%;\n    height: 120px;\n    color: #fff;\n    margin-bottom: 30px;\n    padding: 10px; }\n    .portfolio__recommendation__h2 {\n      font-size: 16px;\n      margin-right: 20px; }\n    .portfolio__recommendation__p {\n      text-align: left; }\n    .portfolio__recommendation__body {\n      text-align: right; }\n    .portfolio__recommendation__img {\n      height: 100%;\n      border-radius: 50%;\n      border: 1px solid #fff;\n      float: left;\n      margin-right: 20px; }\n\n@media screen and (min-width: 1px) and (max-width: 590px) {\n  body .portfolio {\n    padding: 100px 10px 0 10px; }\n    body .portfolio__h1 {\n      margin: 15px 0; } }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 279 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(278);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(17)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/sass-loader/lib/loader.js!./portfolio.scss", function() {
+			var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/sass-loader/lib/loader.js!./portfolio.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
 
 /***/ })
 /******/ ]);
