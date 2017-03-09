@@ -14914,7 +14914,53 @@ var Portfolio = function (_Component) {
         _react2.default.createElement(
           'h1',
           { className: 'portfolio__h1' },
-          'Expertise'
+          'Services'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'portfolio__row' },
+          _react2.default.createElement(
+            'div',
+            { className: 'col-md-4' },
+            _react2.default.createElement(
+              'div',
+              { className: 'portfolio__service' },
+              _react2.default.createElement('div', { className: 'portfolio__service__img', style: { backgroundImage: 'url(assets/images/single-page-app.jpg' } }),
+              _react2.default.createElement(
+                'h1',
+                { className: 'portfolio__service__h1' },
+                'Single Page & Fullstack Applications'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-md-4' },
+            _react2.default.createElement(
+              'div',
+              { className: 'portfolio__service' },
+              _react2.default.createElement('div', { className: 'portfolio__service__img', style: { backgroundImage: 'url(assets/images/performance-optimization.jpg' } }),
+              _react2.default.createElement(
+                'h1',
+                { className: 'portfolio__service__h1' },
+                'Performance & Optimzation'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'col-md-4' },
+            _react2.default.createElement(
+              'div',
+              { className: 'portfolio__service' },
+              _react2.default.createElement('div', { className: 'portfolio__service__img', style: { backgroundImage: 'url(assets/images/scalable-architecture.jpg' } }),
+              _react2.default.createElement(
+                'h1',
+                { className: 'portfolio__service__h1' },
+                'Scalable & Maintainable Architecture'
+              )
+            )
+          )
         ),
         _react2.default.createElement(
           'div',
@@ -14946,52 +14992,6 @@ var Portfolio = function (_Component) {
           )
         ),
         _react2.default.createElement(
-          'div',
-          { className: 'portfolio__row' },
-          _react2.default.createElement(
-            'div',
-            { className: 'col-md-4' },
-            _react2.default.createElement(
-              'div',
-              { className: 'portfolio__service' },
-              _react2.default.createElement('div', { className: 'portfolio__service__img', style: { backgroundImage: 'url(assets/images/bleacherreport.png' } }),
-              _react2.default.createElement(
-                'h1',
-                { className: 'portfolio__service__h1' },
-                'Single Page Applications'
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'col-md-4' },
-            _react2.default.createElement(
-              'div',
-              { className: 'portfolio__service' },
-              _react2.default.createElement('div', { className: 'portfolio__service__img', style: { backgroundImage: 'url(assets/images/bleacherreport.png' } }),
-              _react2.default.createElement(
-                'h1',
-                { className: 'portfolio__service__h1' },
-                'Client Side Performance'
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'col-md-4' },
-            _react2.default.createElement(
-              'div',
-              { className: 'portfolio__service' },
-              _react2.default.createElement('div', { className: 'portfolio__service__img', style: { backgroundImage: 'url(assets/images/bleacherreport.png' } }),
-              _react2.default.createElement(
-                'h1',
-                { className: 'portfolio__service__h1' },
-                'Scalable Databases & API'
-              )
-            )
-          )
-        ),
-        _react2.default.createElement(
           'h1',
           { className: 'portfolio__h1' },
           'More Clients'
@@ -15005,12 +15005,7 @@ var Portfolio = function (_Component) {
             _react2.default.createElement(
               'div',
               { className: 'portfolio__client' },
-              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/bleacherreport.png' })
-            ),
-            _react2.default.createElement(
-              'h1',
-              { className: 'portfolio__client__h1' },
-              'Bleacher Report'
+              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/llnl.png' })
             )
           ),
           _react2.default.createElement(
@@ -15019,12 +15014,7 @@ var Portfolio = function (_Component) {
             _react2.default.createElement(
               'div',
               { className: 'portfolio__client' },
-              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/bleacherreport.png' })
-            ),
-            _react2.default.createElement(
-              'h1',
-              { className: 'portfolio__client__h1' },
-              'Bleacher Report'
+              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/wolo.png' })
             )
           ),
           _react2.default.createElement(
@@ -15033,12 +15023,7 @@ var Portfolio = function (_Component) {
             _react2.default.createElement(
               'div',
               { className: 'portfolio__client' },
-              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/bleacherreport.png' })
-            ),
-            _react2.default.createElement(
-              'h1',
-              { className: 'portfolio__client__h1' },
-              'Bleacher Report'
+              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/ablesys.png' })
             )
           ),
           _react2.default.createElement(
@@ -15047,12 +15032,7 @@ var Portfolio = function (_Component) {
             _react2.default.createElement(
               'div',
               { className: 'portfolio__client' },
-              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/bleacherreport.png' })
-            ),
-            _react2.default.createElement(
-              'h1',
-              { className: 'portfolio__client__h1' },
-              'Bleacher Report'
+              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/stayawhile.png' })
             )
           )
         ),
@@ -15071,12 +15051,7 @@ var Portfolio = function (_Component) {
             _react2.default.createElement(
               'p',
               { className: 'portfolio__recommendation__p' },
-              '"Andrew is a skilled JavaScript developer with a keen eye for aesthetics and clearly-written, performant code. He is passionate about working on big ideas and technology that has a strong social impact."'
-            ),
-            _react2.default.createElement(
-              'h2',
-              { className: 'portfolio__recommendation__h2' },
-              '-Douglas Mill'
+              '"Andrew is a skilled JavaScript developer with a keen eye for aesthetics and clearly-written, performant code. He is passionate about working on big ideas and technology that has a strong social impact." -Douglas Mill'
             )
           )
         )
@@ -30473,7 +30448,7 @@ exports = module.exports = __webpack_require__(16)();
 
 
 // module
-exports.push([module.i, ".hidden {\n  display: none; }\n\n.portfolio {\n  padding: 100px 40px 0 40px;\n  max-width: 1200px;\n  margin: 0 auto; }\n  .portfolio__h1 {\n    font-size: 16px;\n    text-transform: uppercase;\n    font-weight: 600;\n    color: #4990E2;\n    margin: 30px 0 15px 0; }\n  .portfolio__row {\n    display: flex;\n    justify-content: center;\n    margin-bottom: 40px; }\n  .portfolio__client {\n    background: #fff;\n    width: 100%;\n    border-radius: 3px; }\n    .portfolio__client:not(:first-child) {\n      margin-left: 40px; }\n    .portfolio__client__img {\n      width: 100%;\n      height: 150px; }\n    .portfolio__client__h1 {\n      font-size: 16px;\n      font-family: 'Open Sans';\n      font-weight: 400;\n      color: #4A4A4A; }\n  .portfolio__service {\n    width: 100%; }\n    .portfolio__service:not(:first-child) {\n      margin-left: 40px; }\n    .portfolio__service__img {\n      width: 100%;\n      height: 180px;\n      border-radius: 3px;\n      border: 1px solid #4990E2;\n      background-size: cover;\n      background-position: 0 -50px; }\n    .portfolio__service__h1 {\n      font-size: 16px;\n      font-family: 'Open Sans';\n      font-weight: 400;\n      color: #4A4A4A; }\n  .portfolio__expertise {\n    border-radius: 3px;\n    width: 100%;\n    height: 120px;\n    color: #fff;\n    margin-bottom: 30px;\n    padding: 10px;\n    display: flex;\n    justify-content: center; }\n    .portfolio__expertise__h2 {\n      font-size: 16px;\n      margin-right: 20px; }\n    .portfolio__expertise__p {\n      text-align: left; }\n    .portfolio__expertise__body {\n      text-align: right; }\n    .portfolio__expertise__img-container {\n      flex-grow: 1;\n      display: flex;\n      justify-content: center;\n      height: 100%; }\n    .portfolio__expertise__img {\n      height: 100%; }\n  .portfolio__recommendation {\n    background: #4A4A4A;\n    border-radius: 3px;\n    width: 100%;\n    height: 120px;\n    color: #fff;\n    margin-bottom: 30px;\n    padding: 10px; }\n    .portfolio__recommendation__h2 {\n      font-size: 16px;\n      margin-right: 20px; }\n    .portfolio__recommendation__p {\n      text-align: left; }\n    .portfolio__recommendation__body {\n      text-align: right; }\n    .portfolio__recommendation__img {\n      height: 100%;\n      border-radius: 50%;\n      border: 1px solid #fff;\n      float: left;\n      margin-right: 20px; }\n\n@media screen and (min-width: 1px) and (max-width: 590px) {\n  body .portfolio {\n    padding: 100px 10px 0 10px; }\n    body .portfolio__h1 {\n      margin: 15px 0; } }\n", ""]);
+exports.push([module.i, ".hidden {\n  display: none; }\n\n.portfolio {\n  padding: 100px 40px 0 40px;\n  max-width: 1200px;\n  margin: 0 auto; }\n  .portfolio__h1 {\n    font-size: 16px;\n    text-transform: uppercase;\n    font-weight: 600;\n    color: #4990E2;\n    margin: 40px 0 15px 0; }\n  .portfolio__row {\n    display: flex;\n    justify-content: center;\n    margin-bottom: 60px; }\n  .portfolio__client {\n    background: #eee;\n    width: 100%;\n    border-radius: 3px; }\n    .portfolio__client:not(:first-child) {\n      margin-left: 40px; }\n    .portfolio__client__img {\n      width: 100%;\n      height: 150px;\n      padding: 10px; }\n    .portfolio__client__h1 {\n      font-size: 16px;\n      font-family: 'Open Sans';\n      font-weight: 400;\n      color: #4A4A4A; }\n  .portfolio__service {\n    width: 100%; }\n    .portfolio__service:not(:first-child) {\n      margin-left: 40px; }\n    .portfolio__service__img {\n      width: 100%;\n      height: 180px;\n      border-radius: 3px;\n      background-size: cover; }\n    .portfolio__service__h1 {\n      font-size: 16px;\n      font-family: 'Open Sans';\n      font-weight: 400;\n      color: #4A4A4A; }\n  .portfolio__expertise {\n    border-radius: 3px;\n    width: 100%;\n    height: 120px;\n    color: #fff;\n    margin-bottom: 80px;\n    padding: 10px;\n    display: flex;\n    justify-content: center; }\n    .portfolio__expertise__h2 {\n      font-size: 16px;\n      margin-right: 20px; }\n    .portfolio__expertise__p {\n      text-align: left; }\n    .portfolio__expertise__body {\n      text-align: right; }\n    .portfolio__expertise__img-container {\n      flex-grow: 1;\n      display: flex;\n      justify-content: center;\n      height: 100%; }\n    .portfolio__expertise__img {\n      height: 100%; }\n  .portfolio__recommendation {\n    background: #4A4A4A;\n    border-radius: 3px;\n    width: 100%;\n    height: 120px;\n    color: #fff;\n    margin-bottom: 30px;\n    padding: 10px; }\n    .portfolio__recommendation__h2 {\n      font-size: 16px;\n      margin-right: 20px; }\n    .portfolio__recommendation__p {\n      text-align: left;\n      font-style: italic; }\n    .portfolio__recommendation__body {\n      text-align: right; }\n    .portfolio__recommendation__img {\n      height: 100%;\n      border-radius: 50%;\n      float: left;\n      margin-right: 20px; }\n\n@media screen and (min-width: 1px) and (max-width: 590px) {\n  body .portfolio {\n    padding: 100px 10px 0 10px; }\n    body .portfolio__h1 {\n      margin: 15px 0; } }\n", ""]);
 
 // exports
 

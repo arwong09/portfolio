@@ -34,7 +34,27 @@ export default class Portfolio extends Component {
           </div>
         </div>
 
-        <h1 className="portfolio__h1">Expertise</h1>
+        <h1 className="portfolio__h1">Services</h1>
+        <div className="portfolio__row">
+          <div className="col-md-4">
+            <div className="portfolio__service">
+              <div className="portfolio__service__img" style={{backgroundImage: 'url(assets/images/single-page-app.jpg'}}></div>
+              <h1 className="portfolio__service__h1">Single Page & Fullstack Applications</h1>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="portfolio__service">
+              <div className="portfolio__service__img" style={{backgroundImage: 'url(assets/images/performance-optimization.jpg'}}></div>
+              <h1 className="portfolio__service__h1">Performance & Optimzation</h1>
+            </div>
+          </div>
+          <div className="col-md-4">
+            <div className="portfolio__service">
+              <div className="portfolio__service__img" style={{backgroundImage: 'url(assets/images/scalable-architecture.jpg'}}></div>
+              <h1 className="portfolio__service__h1">Scalable & Maintainable Architecture</h1>
+            </div>
+          </div>
+        </div>
         <div className="portfolio__expertise">
           <div className="portfolio__expertise__img-container">
             <img className="portfolio__expertise__img" src="assets/images/react.png" />
@@ -51,55 +71,29 @@ export default class Portfolio extends Component {
           <div className="portfolio__expertise__img-container">
             <img className="portfolio__expertise__img" src="assets/images/postgresql.png" />
           </div>
-
         </div>
-        <div className="portfolio__row">
-          <div className="col-md-4">
-            <div className="portfolio__service">
-              <div className="portfolio__service__img" style={{backgroundImage: 'url(assets/images/bleacherreport.png'}}></div>
-              <h1 className="portfolio__service__h1">Single Page Applications</h1>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="portfolio__service">
-              <div className="portfolio__service__img" style={{backgroundImage: 'url(assets/images/bleacherreport.png'}}></div>
-              <h1 className="portfolio__service__h1">Client Side Performance</h1>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="portfolio__service">
-              <div className="portfolio__service__img" style={{backgroundImage: 'url(assets/images/bleacherreport.png'}}></div>
-              <h1 className="portfolio__service__h1">Scalable Databases & API</h1>
-            </div>
-          </div>
-        </div>
-
 
         <h1 className="portfolio__h1">More Clients</h1>
         <div className="portfolio__row">
           <div className="col-md-3">
             <div className="portfolio__client">
-              <img className="portfolio__client__img" src="assets/images/bleacherreport.png" />
+              <img className="portfolio__client__img" src="assets/images/llnl.png" />
             </div>
-            <h1 className="portfolio__client__h1">Bleacher Report</h1>
           </div>
           <div className="col-md-3">
             <div className="portfolio__client">
-              <img className="portfolio__client__img" src="assets/images/bleacherreport.png" />
+              <img className="portfolio__client__img" src="assets/images/wolo.png" />
             </div>
-            <h1 className="portfolio__client__h1">Bleacher Report</h1>
           </div>
           <div className="col-md-3">
             <div className="portfolio__client">
-              <img className="portfolio__client__img" src="assets/images/bleacherreport.png" />
+              <img className="portfolio__client__img" src="assets/images/ablesys.png" />
             </div>
-            <h1 className="portfolio__client__h1">Bleacher Report</h1>
           </div>
           <div className="col-md-3">
             <div className="portfolio__client">
-              <img className="portfolio__client__img" src="assets/images/bleacherreport.png" />
+              <img className="portfolio__client__img" src="assets/images/stayawhile.png" />
             </div>
-            <h1 className="portfolio__client__h1">Bleacher Report</h1>
           </div>
         </div>
 
@@ -107,8 +101,7 @@ export default class Portfolio extends Component {
         <div className="portfolio__recommendation">
           <img className="portfolio__recommendation__img" src="assets/images/doug.jpg" />
           <div className="portfolio__recommendation__body">
-            <p className="portfolio__recommendation__p">"Andrew is a skilled JavaScript developer with a keen eye for aesthetics and clearly-written, performant code. He is passionate about working on big ideas and technology that has a strong social impact."</p>
-            <h2 className="portfolio__recommendation__h2">-Douglas Mill</h2>
+            <p className="portfolio__recommendation__p">"Andrew is a skilled JavaScript developer with a keen eye for aesthetics and clearly-written, performant code. He is passionate about working on big ideas and technology that has a strong social impact." -Douglas Mill</p>
           </div>
         </div>
       </div>
