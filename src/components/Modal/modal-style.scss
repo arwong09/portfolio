@@ -20,23 +20,23 @@
     width: 100%;
     height: 240px;
     background-size: cover;
+    position: relative;
   }
 
   &__h1 {
-    position: fixed;
-    top: 130px;
-    left: 40px;
-    background: #fafafa;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
     text-transform: uppercase;
-    color: $black;
+    color: #fff;
     font-size: 16px;
     text-align: center;
-    padding: 5px 15px;
-    border: 1px solid $black;
+    padding: 3px 12px;
     border-radius: 2px;
     letter-spacing: 1px;
     font-weight: 600;
-    font-family: 'Garamond', serif;
+    background: #2f2f2f;
+    margin: 0;
     box-shadow: -1px 1px 8px rgba(0,0,0,0.2);
   }
 
@@ -73,4 +73,34 @@
 .modal-leave.modal-leave-active {
   opacity: 0.01;
   transition: opacity 200ms ease-in;
+}
+
+@media screen and (min-width: 1px) and (max-width: 1000px) {
+  .modal {
+    &__img {
+      background-size: auto 115%;
+      background-position: 0 -10px;
+    }
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 590px) {
+  .modal {
+    padding: 5px;
+
+    &__body {
+      padding: 10px 15px;
+    }
+
+    &__p {
+      margin: 0;
+      padding-bottom: 10px;
+    }
+
+    &__img {
+      background-size: auto 115%;
+      background-position: 0 -10px;
+      height: 120px;
+    }
+  }
 }

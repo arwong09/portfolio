@@ -1,5 +1,5 @@
 import style from './index.scss'
-import React, { Component } from 'react'
+import React, { Component, cloneElement } from 'react'
 import { PORTFOLIO } from 'data/items.js'
 import Feed from 'components/Feed/Feed.jsx'
 import Modal from 'components/Modal/Modal.jsx'
@@ -28,7 +28,7 @@ export default class Index extends Component {
             description={this.state.modalContent.description}
             renderModal={this.renderModal} />
         }
-        {this.props.children}
+        {cloneElement(this.props.children, { renderModal: this.renderModal })}
         <Footer />
       </div>
     )

@@ -6,9 +6,13 @@ import Modal from 'components/Modal/Modal.jsx'
 import Nav from 'views/Page/components/Nav/Nav.jsx'
 
 export default class Photos extends Component {
+  constructor(props) {
+    super(props)
+  }
+
   render() {
     return(
-      <Feed items={PHOTOS} name="Photos" renderModal={this.renderModal} />
+      <Feed items={PHOTOS} name="Photos" renderModal={this.props.renderModal} />
     )
   }
 }
