@@ -50,6 +50,10 @@ html, body {
     height: 100%;
     margin-left: 5px;
   }
+
+  &__socials {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1px) and (max-width: 590px) {
@@ -60,6 +64,42 @@ html, body {
 
     &__block2 {
       display: none;
+    }
+
+    &__socials {
+      display: inline-flex;
+      align-items: center;
+      margin: 0 10px;
+    }
+
+    &__social {
+      padding: 0 15px;
+      color: #fff;
+      cursor: pointer;
+      font-size: 16px;
+      @include transition;
+
+      &:hover {
+        color: #eee;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1px) and (max-width: 379px) {
+  body .nav2 {
+    &__social {
+      padding: 0 10px;
+      font-size: 16px;
+    }
+
+    &__avatar {
+      margin-right: 5px;
+    }
+
+    &__block {
+      font-size: 14px;
+      padding: 0px 10px 0px 0px;
     }
   }
 }
