@@ -16,6 +16,7 @@ export default class Footer extends Component {
           </g>
         </svg>
         <h1 className="footer__h1">React / Ruby on Rails Consultant</h1>
+        <div className="footer__phone"><span className="fa fa-phone footer__icon"></span> +1 (415) 993-8793</div>
       </footer>
     )
   }

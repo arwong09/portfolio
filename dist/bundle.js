@@ -15131,6 +15131,12 @@ var Footer = function (_Component) {
           'h1',
           { className: 'footer__h1' },
           'React / Ruby on Rails Consultant'
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'footer__phone' },
+          _react2.default.createElement('span', { className: 'fa fa-phone footer__icon' }),
+          ' +1 (415) 993-8793'
         )
       );
     }
@@ -15316,7 +15322,7 @@ exports = module.exports = __webpack_require__(16)();
 
 
 // module
-exports.push([module.i, ".hidden {\n  display: none; }\n\n.footer {\n  opacity: 0.5;\n  padding-bottom: 40px;\n  padding-top: 20px; }\n  .footer__h1 {\n    color: #4990E2;\n    font-weight: 400;\n    font-size: 12px; }\n", ""]);
+exports.push([module.i, ".hidden {\n  display: none; }\n\n.footer {\n  opacity: 0.5;\n  padding-bottom: 40px;\n  padding-top: 20px; }\n  .footer__h1 {\n    color: #4990E2;\n    font-weight: 400;\n    font-size: 12px; }\n  .footer__phone {\n    font-size: 12px;\n    color: #4990E2; }\n", ""]);
 
 // exports
 
@@ -15330,7 +15336,7 @@ exports = module.exports = __webpack_require__(16)();
 
 
 // module
-exports.push([module.i, ".hidden {\n  display: none; }\n\n.nav {\n  padding: 10px 40px;\n  display: flex;\n  align-items: center;\n  position: fixed;\n  background: #fff;\n  top: 0;\n  width: 100%;\n  z-index: 1000; }\n  .nav__buttons {\n    display: inline-flex;\n    align-items: center;\n    height: 100%;\n    margin: 0 10px; }\n  .nav__button {\n    width: 120px;\n    text-transform: uppercase;\n    color: #777;\n    text-align: center;\n    font-size: 14px;\n    cursor: pointer;\n    text-decoration: none; }\n    .nav__button:hover {\n      color: #4A4A4A;\n      transition: 150ms;\n      transition-timing-function: ease-in;\n      will-change: filter transform;\n      -webkit-transition: 150ms;\n      -webkit-transition-timing-function: ease-in; }\n  .nav__socials {\n    display: inline-flex;\n    align-items: center;\n    margin: 0 10px; }\n  .nav__social {\n    padding: 0 15px;\n    color: #01B2FF;\n    cursor: pointer;\n    font-size: 16px;\n    transition: 150ms;\n    transition-timing-function: ease-in;\n    will-change: filter transform;\n    -webkit-transition: 150ms;\n    -webkit-transition-timing-function: ease-in; }\n    .nav__social:hover {\n      color: #42D6FF; }\n\nsvg {\n  cursor: pointer; }\n\nsvg:hover #Rectangle-2, svg:hover text {\n  fill: #42D6FF;\n  transition: 150ms;\n  transition-timing-function: ease-in;\n  will-change: filter transform;\n  -webkit-transition: 150ms;\n  -webkit-transition-timing-function: ease-in; }\n\n@media screen and (min-width: 1px) and (max-width: 590px) {\n  body .nav {\n    padding: 10px 10px; }\n    body .nav__socials {\n      display: none; } }\n", ""]);
+exports.push([module.i, ".hidden {\n  display: none; }\n\n.nav {\n  padding: 10px 40px;\n  display: flex;\n  align-items: center;\n  position: fixed;\n  background: #fff;\n  top: 0;\n  width: 100%;\n  z-index: 1000; }\n  .nav__buttons {\n    display: inline-flex;\n    align-items: center;\n    height: 100%;\n    margin: 0 10px; }\n  .nav__button {\n    width: 120px;\n    text-transform: uppercase;\n    color: #777;\n    text-align: center;\n    font-size: 14px;\n    cursor: pointer;\n    text-decoration: none; }\n    .nav__button:hover {\n      color: #4A4A4A;\n      transition: 150ms;\n      transition-timing-function: ease-in;\n      will-change: filter transform;\n      -webkit-transition: 150ms;\n      -webkit-transition-timing-function: ease-in; }\n  .nav__socials {\n    display: inline-flex;\n    align-items: center;\n    margin: 0 10px; }\n  .nav__social {\n    padding: 0 15px;\n    color: #01B2FF;\n    cursor: pointer;\n    font-size: 16px;\n    transition: 150ms;\n    transition-timing-function: ease-in;\n    will-change: filter transform;\n    -webkit-transition: 150ms;\n    -webkit-transition-timing-function: ease-in; }\n    .nav__social:hover {\n      color: #42D6FF; }\n  .nav svg:hover #Rectangle-2, .nav svg:hover text {\n    fill: #42D6FF;\n    transition: 150ms;\n    transition-timing-function: ease-in;\n    will-change: filter transform;\n    -webkit-transition: 150ms;\n    -webkit-transition-timing-function: ease-in; }\n\n@media screen and (min-width: 1px) and (max-width: 590px) {\n  body .nav {\n    padding: 10px 10px; }\n    body .nav__socials {\n      display: none; } }\n", ""]);
 
 // exports
 

@@ -49,15 +49,11 @@
       color: $lightblue-hl;
     }
   }
-}
 
-svg {
-  cursor: pointer;
-}
-
-svg:hover #Rectangle-2, svg:hover text {
-  fill: $lightblue-hl;
-  @include transition;
+  svg:hover #Rectangle-2, svg:hover text {
+    fill: $lightblue-hl;
+    @include transition;
+  }
 }
 
 @media screen and (min-width: 1px) and (max-width: 590px) {
