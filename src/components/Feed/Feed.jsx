@@ -14,7 +14,6 @@ export default class Feed extends Component {
     let updatedItems = this.state.loadedItems
     updatedItems.push({ name: feedItem.props.name, imgPath: feedItem.props.imgPath })
     this.setState({ loadedItems: updatedItems })
-    this.loadingItem ? this.loadingItem.animate() : null
   }
 
   render() {
@@ -29,9 +28,9 @@ export default class Feed extends Component {
             key={i} />
         )}
         {this.props.items.length > this.state.loadedItems.length &&
-          <LoadingItem ref={(loadingItem) => this.loadingItem = loadingItem} />
+          <LoadingItem />
         }
-        <div className="feed__loading hidden">
+        <div className="hidden">
           {this.props.items.map((item, i) =>
             <FeedItem
               imgPath={item.imgPath}

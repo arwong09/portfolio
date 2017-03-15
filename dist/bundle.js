@@ -5779,7 +5779,6 @@ var Feed = function (_Component) {
       var updatedItems = this.state.loadedItems;
       updatedItems.push({ name: feedItem.props.name, imgPath: feedItem.props.imgPath });
       this.setState({ loadedItems: updatedItems });
-      this.loadingItem ? this.loadingItem.animate() : null;
     }
   }, {
     key: 'render',
@@ -5801,12 +5800,10 @@ var Feed = function (_Component) {
             renderModal: _this2.props.renderModal,
             key: i });
         }),
-        this.props.items.length > this.state.loadedItems.length && _react2.default.createElement(_LoadingItem2.default, { ref: function ref(loadingItem) {
-            return _this2.loadingItem = loadingItem;
-          } }),
+        this.props.items.length > this.state.loadedItems.length && _react2.default.createElement(_LoadingItem2.default, null),
         _react2.default.createElement(
           'div',
-          { className: 'feed__loading hidden' },
+          { className: 'hidden' },
           this.props.items.map(function (item, i) {
             return _react2.default.createElement(_FeedItem2.default, {
               imgPath: item.imgPath,
