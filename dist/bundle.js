@@ -14835,6 +14835,10 @@ var _Nav = __webpack_require__(48);
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
+var _PortfolioItem = __webpack_require__(280);
+
+var _PortfolioItem2 = _interopRequireDefault(_PortfolioItem);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -14869,38 +14873,22 @@ var Portfolio = function (_Component) {
           _react2.default.createElement(
             'div',
             { className: 'col-md-3' },
-            _react2.default.createElement(
-              'div',
-              { className: 'portfolio__client' },
-              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/bleacherreport.png' })
-            )
+            _react2.default.createElement(_PortfolioItem2.default, { imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/bleacherreport.png' })
           ),
           _react2.default.createElement(
             'div',
             { className: 'col-md-3' },
-            _react2.default.createElement(
-              'div',
-              { className: 'portfolio__client' },
-              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/startupchile.png' })
-            )
+            _react2.default.createElement(_PortfolioItem2.default, { imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/startupchile.png' })
           ),
           _react2.default.createElement(
             'div',
             { className: 'col-md-3' },
-            _react2.default.createElement(
-              'div',
-              { className: 'portfolio__client' },
-              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/zaetae.png' })
-            )
+            _react2.default.createElement(_PortfolioItem2.default, { imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/zaetae.png' })
           ),
           _react2.default.createElement(
             'div',
             { className: 'col-md-3' },
-            _react2.default.createElement(
-              'div',
-              { className: 'portfolio__client' },
-              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/humblee.png' })
-            )
+            _react2.default.createElement(_PortfolioItem2.default, { imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/humblee.png' })
           )
         ),
         _react2.default.createElement(
@@ -14994,38 +14982,22 @@ var Portfolio = function (_Component) {
           _react2.default.createElement(
             'div',
             { className: 'col-md-3' },
-            _react2.default.createElement(
-              'div',
-              { className: 'portfolio__client' },
-              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/llnl.png' })
-            )
+            _react2.default.createElement(_PortfolioItem2.default, { imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/llnl.png' })
           ),
           _react2.default.createElement(
             'div',
             { className: 'col-md-3' },
-            _react2.default.createElement(
-              'div',
-              { className: 'portfolio__client' },
-              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/wolo.png' })
-            )
+            _react2.default.createElement(_PortfolioItem2.default, { imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/wolo.png' })
           ),
           _react2.default.createElement(
             'div',
             { className: 'col-md-3' },
-            _react2.default.createElement(
-              'div',
-              { className: 'portfolio__client' },
-              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/ablesys.png' })
-            )
+            _react2.default.createElement(_PortfolioItem2.default, { imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/ablesys.png' })
           ),
           _react2.default.createElement(
             'div',
             { className: 'col-md-3' },
-            _react2.default.createElement(
-              'div',
-              { className: 'portfolio__client' },
-              _react2.default.createElement('img', { className: 'portfolio__client__img', src: 'assets/images/stayawhile.png' })
-            )
+            _react2.default.createElement(_PortfolioItem2.default, { imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/stayawhile.png' })
           )
         ),
         _react2.default.createElement(
@@ -30433,6 +30405,141 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
     _react2.default.createElement(_reactRouter.Route, { path: '*', component: _Photos2.default })
   )
 ), document.getElementById('root'));
+
+/***/ }),
+/* 280 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _portfolioItem = __webpack_require__(282);
+
+var _portfolioItem2 = _interopRequireDefault(_portfolioItem);
+
+var _react = __webpack_require__(5);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactAddonsCssTransitionGroup = __webpack_require__(54);
+
+var _reactAddonsCssTransitionGroup2 = _interopRequireDefault(_reactAddonsCssTransitionGroup);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var img = 'dist/' + __webpack_require__(161);
+
+var PortfolioItem = function (_Component) {
+  _inherits(PortfolioItem, _Component);
+
+  function PortfolioItem(props) {
+    _classCallCheck(this, PortfolioItem);
+
+    var _this = _possibleConstructorReturn(this, (PortfolioItem.__proto__ || Object.getPrototypeOf(PortfolioItem)).call(this, props));
+
+    _this.state = { loaded: false };
+    _this.onLoad = _this.onLoad.bind(_this);
+    return _this;
+  }
+
+  _createClass(PortfolioItem, [{
+    key: 'onLoad',
+    value: function onLoad() {
+      this.setState({ loaded: true });
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      if (this.state.loaded) {
+        return _react2.default.createElement(
+          'div',
+          { className: 'portfolio__client' },
+          _react2.default.createElement(
+            _reactAddonsCssTransitionGroup2.default,
+            {
+              transitionName: 'item',
+              transitionAppear: true,
+              transitionAppearTimeout: 500,
+              transitionEnterTimeout: 500,
+              transitionLeaveTimeout: 300 },
+            _react2.default.createElement('img', { className: 'portfolio__client__img', src: this.props.imgPath })
+          )
+        );
+      } else {
+        return _react2.default.createElement(
+          _reactAddonsCssTransitionGroup2.default,
+          {
+            transitionName: 'loadingItem',
+            transitionAppear: true,
+            transitionAppearTimeout: 500,
+            transitionEnterTimeout: 500,
+            transitionLeaveTimeout: 300 },
+          _react2.default.createElement(
+            'div',
+            { className: 'fa fa-image portfolio__client__placeholder' },
+            _react2.default.createElement('img', { className: 'hidden', src: this.props.imgPath, onLoad: this.onLoad })
+          )
+        );
+      }
+    }
+  }]);
+
+  return PortfolioItem;
+}(_react.Component);
+
+exports.default = PortfolioItem;
+
+/***/ }),
+/* 281 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(14)();
+// imports
+
+
+// module
+exports.push([module.i, ".hidden {\n  display: none; }\n\n.portfolio__client {\n  background: #eee;\n  width: 100%;\n  border-radius: 3px;\n  display: flex;\n  justify-content: center; }\n  .portfolio__client:not(:first-child) {\n    margin-left: 40px; }\n  .portfolio__client__img {\n    width: 100%;\n    height: 150px;\n    padding: 10px; }\n  .portfolio__client__h1 {\n    font-size: 16px;\n    font-family: 'Open Sans';\n    font-weight: 400;\n    color: #4A4A4A; }\n  .portfolio__client__placeholder {\n    font-size: 100px;\n    color: #fff;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    background: #eee;\n    border-radius: 3px;\n    height: 150px;\n    animation: portfolio-loading 0.5s infinite; }\n\n@keyframes portfolio-loading {\n  0% {\n    opacity: 1; }\n  50% {\n    opacity: 0.6; }\n  100% {\n    opacity: 1; } }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 282 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(281);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// add the styles to the DOM
+var update = __webpack_require__(17)(content, {});
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/sass-loader/lib/loader.js!./portfolio-item.scss", function() {
+			var newContent = require("!!../../../../../../node_modules/css-loader/index.js!../../../../../../node_modules/sass-loader/lib/loader.js!./portfolio-item.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
 
 /***/ })
 /******/ ]);

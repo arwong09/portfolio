@@ -4,6 +4,7 @@ import { PORTFOLIO } from 'data/items.js'
 import Feed from 'components/Feed/Feed.jsx'
 import Modal from 'components/Modal/Modal.jsx'
 import Nav from 'views/Index/components/Nav/Nav.jsx'
+import PortfolioItem from './components/PortfolioItem.jsx'
 
 export default class Portfolio extends Component {
   render() {
@@ -13,24 +14,16 @@ export default class Portfolio extends Component {
 
         <div className="portfolio__row">
           <div className="col-md-3">
-            <div className="portfolio__client">
-              <img className="portfolio__client__img" src="assets/images/bleacherreport.png" />
-            </div>
+            <PortfolioItem imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/bleacherreport.png" />
           </div>
           <div className="col-md-3">
-            <div className="portfolio__client">
-              <img className="portfolio__client__img" src="assets/images/startupchile.png" />
-            </div>
+            <PortfolioItem imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/startupchile.png" />
           </div>
           <div className="col-md-3">
-            <div className="portfolio__client">
-              <img className="portfolio__client__img" src="assets/images/zaetae.png" />
-            </div>
+            <PortfolioItem imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/zaetae.png" />
           </div>
           <div className="col-md-3">
-            <div className="portfolio__client">
-              <img className="portfolio__client__img" src="assets/images/humblee.png" />
-            </div>
+            <PortfolioItem imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/humblee.png" />
           </div>
         </div>
 
@@ -76,24 +69,16 @@ export default class Portfolio extends Component {
         <h1 className="portfolio__h1">More Clients</h1>
         <div className="portfolio__row">
           <div className="col-md-3">
-            <div className="portfolio__client">
-              <img className="portfolio__client__img" src="assets/images/llnl.png" />
-            </div>
+            <PortfolioItem imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/llnl.png" />
           </div>
           <div className="col-md-3">
-            <div className="portfolio__client">
-              <img className="portfolio__client__img" src="assets/images/wolo.png" />
-            </div>
+            <PortfolioItem imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/wolo.png" />
           </div>
           <div className="col-md-3">
-            <div className="portfolio__client">
-              <img className="portfolio__client__img" src="assets/images/ablesys.png" />
-            </div>
+            <PortfolioItem imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/ablesys.png" />
           </div>
           <div className="col-md-3">
-            <div className="portfolio__client">
-              <img className="portfolio__client__img" src="assets/images/stayawhile.png" />
-            </div>
+            <PortfolioItem imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/stayawhile.png" />
           </div>
         </div>
 

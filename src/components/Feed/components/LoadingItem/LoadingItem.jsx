@@ -1,5 +1,5 @@
 import style from './loading-item.scss'
-import React, { Component } from 'react'
+import React from 'react'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 const img = 'dist/' + require('./loading-item.png');
 

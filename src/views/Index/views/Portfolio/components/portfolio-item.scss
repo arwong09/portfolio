@@ -1,0 +1,52 @@
+@import 'assets/css/variables';
+
+.portfolio {
+  &__client {
+    background: #eee;
+    width: 100%;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+
+    &:not(:first-child) {
+      margin-left: 40px;
+    }
+
+    &__img {
+      width: 100%;
+      height: 150px;
+      padding: 10px;
+    }
+
+    &__h1 {
+      font-size: 16px;
+      font-family: 'Open Sans';
+      font-weight: 400;
+      color: $black;
+    }
+
+    &__placeholder {
+      font-size: 100px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #eee;
+      border-radius: 3px;
+      height: 150px;
+      animation: portfolio-loading 0.5s infinite;
+    }
+  }
+}
+
+@keyframes portfolio-loading {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
