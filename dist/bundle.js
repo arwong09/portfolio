@@ -14873,22 +14873,22 @@ var Portfolio = function (_Component) {
           _react2.default.createElement(
             'div',
             { className: 'col-md-3' },
-            _react2.default.createElement(_PortfolioItem2.default, { imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/bleacherreport.png' })
+            _react2.default.createElement(_PortfolioItem2.default, { href: 'http://bleacherreport.com', imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/bleacherreport.png' })
           ),
           _react2.default.createElement(
             'div',
             { className: 'col-md-3' },
-            _react2.default.createElement(_PortfolioItem2.default, { imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/startupchile.png' })
+            _react2.default.createElement(_PortfolioItem2.default, { href: 'http://startupchile.org', imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/startupchile.png' })
           ),
           _react2.default.createElement(
             'div',
             { className: 'col-md-3' },
-            _react2.default.createElement(_PortfolioItem2.default, { imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/zaetae.png' })
+            _react2.default.createElement(_PortfolioItem2.default, { href: 'http://zaetae.com', imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/zaetae.png' })
           ),
           _react2.default.createElement(
             'div',
             { className: 'col-md-3' },
-            _react2.default.createElement(_PortfolioItem2.default, { imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/humblee.png' })
+            _react2.default.createElement(_PortfolioItem2.default, { href: 'http://sohumblee.com', imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/humblee.png' })
           )
         ),
         _react2.default.createElement(
@@ -14982,22 +14982,22 @@ var Portfolio = function (_Component) {
           _react2.default.createElement(
             'div',
             { className: 'col-md-3' },
-            _react2.default.createElement(_PortfolioItem2.default, { imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/llnl.png' })
+            _react2.default.createElement(_PortfolioItem2.default, { href: 'http://llnl.gov/', imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/llnl.png' })
           ),
           _react2.default.createElement(
             'div',
             { className: 'col-md-3' },
-            _react2.default.createElement(_PortfolioItem2.default, { imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/wolo.png' })
+            _react2.default.createElement(_PortfolioItem2.default, { href: 'http://wolorewards.com', imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/wolo.png' })
           ),
           _react2.default.createElement(
             'div',
             { className: 'col-md-3' },
-            _react2.default.createElement(_PortfolioItem2.default, { imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/ablesys.png' })
+            _react2.default.createElement(_PortfolioItem2.default, { href: 'http://wintick.com', imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/ablesys.png' })
           ),
           _react2.default.createElement(
             'div',
             { className: 'col-md-3' },
-            _react2.default.createElement(_PortfolioItem2.default, { imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/stayawhile.png' })
+            _react2.default.createElement(_PortfolioItem2.default, { href: 'http://stayawhile.com', imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/stayawhile.png' })
           )
         ),
         _react2.default.createElement(
@@ -30464,8 +30464,8 @@ var PortfolioItem = function (_Component) {
     value: function render() {
       if (this.state.loaded) {
         return _react2.default.createElement(
-          'div',
-          { className: 'portfolio__client' },
+          'a',
+          { className: 'portfolio__client', href: this.props.href },
           _react2.default.createElement(
             _reactAddonsCssTransitionGroup2.default,
             {

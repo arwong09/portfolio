@@ -17,7 +17,7 @@ export default class PortfolioItem extends Component {
   render() {
     if(this.state.loaded) {
       return (
-        <div className="portfolio__client">
+        <a className="portfolio__client" href={this.props.href}>
           <ReactCSSTransitionGroup
             transitionName="item"
             transitionAppear={true}
@@ -26,7 +26,7 @@ export default class PortfolioItem extends Component {
             transitionLeaveTimeout={300}>
               <img className="portfolio__client__img" src={this.props.imgPath} />
           </ReactCSSTransitionGroup>
-        </div>
+        </a>
       )
     } else {
       return (

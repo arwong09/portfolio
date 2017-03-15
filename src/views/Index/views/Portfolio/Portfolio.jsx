@@ -14,16 +14,16 @@ export default class Portfolio extends Component {
 
         <div className="portfolio__row">
           <div className="col-md-3">
-            <PortfolioItem imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/bleacherreport.png" />
+            <PortfolioItem href="http://bleacherreport.com" imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/bleacherreport.png" />
           </div>
           <div className="col-md-3">
-            <PortfolioItem imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/startupchile.png" />
+            <PortfolioItem href="http://startupchile.org" imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/startupchile.png" />
           </div>
           <div className="col-md-3">
-            <PortfolioItem imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/zaetae.png" />
+            <PortfolioItem href="http://zaetae.com" imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/zaetae.png" />
           </div>
           <div className="col-md-3">
-            <PortfolioItem imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/humblee.png" />
+            <PortfolioItem href="http://sohumblee.com" imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/humblee.png" />
           </div>
         </div>
 
@@ -69,16 +69,16 @@ export default class Portfolio extends Component {
         <h1 className="portfolio__h1">More Clients</h1>
         <div className="portfolio__row">
           <div className="col-md-3">
-            <PortfolioItem imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/llnl.png" />
+            <PortfolioItem href="http://llnl.gov/" imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/llnl.png" />
           </div>
           <div className="col-md-3">
-            <PortfolioItem imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/wolo.png" />
+            <PortfolioItem href="http://wolorewards.com" imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/wolo.png" />
           </div>
           <div className="col-md-3">
-            <PortfolioItem imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/ablesys.png" />
+            <PortfolioItem href="http://wintick.com" imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/ablesys.png" />
           </div>
           <div className="col-md-3">
-            <PortfolioItem imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/stayawhile.png" />
+            <PortfolioItem href="http://stayawhile.com" imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/stayawhile.png" />
           </div>
         </div>
 
