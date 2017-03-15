@@ -29,7 +29,6 @@ export default class FeedItem extends Component {
           <div className="feed__item__img" style={{backgroundImage: 'url(' + this.props.imgPath + ')'}}></div>
           <h2 className="feed__item__h2">{this.props.name}</h2>
         </ReactCSSTransitionGroup>
-        <img className="hidden" src={this.props.imgPath} onLoad={this.onLoad} />
       </div>
     )
   }

@@ -7,12 +7,11 @@ export default class Feed extends Component {
   constructor(props) {
     super(props)
     this.state = { loadedItems: [] }
-    this.onLoad = this.onLoad.bind(this)
   }
 
   onLoad(feedItem) {
     let updatedItems = this.state.loadedItems
-    updatedItems.push({ name: feedItem.props.name, imgPath: feedItem.props.imgPath })
+    updatedItems.push({ name: feedItem.name, imgPath: feedItem.imgPath })
     this.setState({ loadedItems: updatedItems })
   }
 
@@ -32,11 +31,7 @@ export default class Feed extends Component {
         }
         <div className="hidden">
           {this.props.items.map((item, i) =>
-            <FeedItem
-              imgPath={item.imgPath}
-              name={item.name}
-              onLoad={this.onLoad}
-              key={i} />
+            <img src={item.imgPath} onLoad={this.onLoad.bind(this, item)} key={i} />
           )}
         </div>
       </div>

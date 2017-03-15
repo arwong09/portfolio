@@ -5769,7 +5769,6 @@ var Feed = function (_Component) {
     var _this = _possibleConstructorReturn(this, (Feed.__proto__ || Object.getPrototypeOf(Feed)).call(this, props));
 
     _this.state = { loadedItems: [] };
-    _this.onLoad = _this.onLoad.bind(_this);
     return _this;
   }
 
@@ -5777,7 +5776,7 @@ var Feed = function (_Component) {
     key: 'onLoad',
     value: function onLoad(feedItem) {
       var updatedItems = this.state.loadedItems;
-      updatedItems.push({ name: feedItem.props.name, imgPath: feedItem.props.imgPath });
+      updatedItems.push({ name: feedItem.name, imgPath: feedItem.imgPath });
       this.setState({ loadedItems: updatedItems });
     }
   }, {
@@ -5805,11 +5804,7 @@ var Feed = function (_Component) {
           'div',
           { className: 'hidden' },
           this.props.items.map(function (item, i) {
-            return _react2.default.createElement(_FeedItem2.default, {
-              imgPath: item.imgPath,
-              name: item.name,
-              onLoad: _this2.onLoad,
-              key: i });
+            return _react2.default.createElement('img', { src: item.imgPath, onLoad: _this2.onLoad.bind(_this2, item), key: i });
           })
         )
       );
@@ -15165,8 +15160,7 @@ var FeedItem = function (_Component) {
             { className: 'feed__item__h2' },
             this.props.name
           )
-        ),
-        _react2.default.createElement('img', { className: 'hidden', src: this.props.imgPath, onLoad: this.onLoad })
+        )
       );
     }
   }]);
