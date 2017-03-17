@@ -10,9 +10,9 @@ export default class Feed extends Component {
   }
 
   onLoad(feedItem) {
-    let updatedItems = this.state.loadedItems
-    updatedItems.push({ name: feedItem.name, imgPath: feedItem.imgPath })
-    this.setState({ loadedItems: updatedItems })
+    this.setState(({ loadedItems }) => {
+      return { loadedItems: loadedItems.concat(feedItem) }
+    })
   }
 
   render() {
