@@ -12,36 +12,36 @@ export default class Portfolio extends Component {
       <div className="portfolio">
         <h1 className="portfolio__h1">Past Clients</h1>
 
-        <div className="portfolio__row">
-          <div className="col-md-3">
+        <div className="row portfolio__clients">
+          <div className="col-sm-3">
             <PortfolioItem href="http://bleacherreport.com" imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/bleacherreport.png" />
           </div>
-          <div className="col-md-3">
+          <div className="col-sm-3">
             <PortfolioItem href="http://startupchile.org" imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/startupchile.png" />
           </div>
-          <div className="col-md-3">
+          <div className="col-sm-3">
             <PortfolioItem href="http://zaetae.com" imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/zaetae.png" />
           </div>
-          <div className="col-md-3">
+          <div className="col-sm-3">
             <PortfolioItem href="http://sohumblee.com" imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/humblee.png" />
           </div>
         </div>
 
         <h1 className="portfolio__h1">Services</h1>
-        <div className="portfolio__row">
-          <div className="col-md-4">
+        <div className="row portfolio__row">
+          <div className="col-sm-4">
             <div className="portfolio__service">
               <div className="portfolio__service__img" style={{backgroundImage: 'url(assets/images/single-page-app.jpg'}}></div>
               <h1 className="portfolio__service__h1">Single Page & Fullstack Applications</h1>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-sm-4">
             <div className="portfolio__service">
               <div className="portfolio__service__img" style={{backgroundImage: 'url(assets/images/performance-optimization.jpg'}}></div>
               <h1 className="portfolio__service__h1">Performance & Optimzation</h1>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-sm-4">
             <div className="portfolio__service">
               <div className="portfolio__service__img" style={{backgroundImage: 'url(assets/images/scalable-architecture.jpg'}}></div>
               <h1 className="portfolio__service__h1">Scalable & Maintainable Architecture</h1>
@@ -67,17 +67,17 @@ export default class Portfolio extends Component {
         </div>
 
         <h1 className="portfolio__h1">More Clients</h1>
-        <div className="portfolio__row">
-          <div className="col-md-3">
+        <div className="row portfolio__clients">
+          <div className="col-sm-3">
             <PortfolioItem href="http://llnl.gov/" imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/llnl.png" />
           </div>
-          <div className="col-md-3">
+          <div className="col-sm-3">
             <PortfolioItem href="http://wolorewards.com" imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/wolo.png" />
           </div>
-          <div className="col-md-3">
+          <div className="col-sm-3">
             <PortfolioItem href="http://wintick.com" imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/ablesys.png" />
           </div>
-          <div className="col-md-3">
+          <div className="col-sm-3">
             <PortfolioItem href="http://stayawhile.com" imgPath="https://s3-us-west-1.amazonaws.com/nomadwong-photos/stayawhile.png" />
           </div>
         </div>

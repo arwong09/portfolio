@@ -14871,25 +14871,25 @@ var Portfolio = function (_Component) {
         ),
         _react2.default.createElement(
           'div',
-          { className: 'portfolio__row' },
+          { className: 'row portfolio__clients' },
           _react2.default.createElement(
             'div',
-            { className: 'col-md-3' },
+            { className: 'col-sm-3' },
             _react2.default.createElement(_PortfolioItem2.default, { href: 'http://bleacherreport.com', imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/bleacherreport.png' })
           ),
           _react2.default.createElement(
             'div',
-            { className: 'col-md-3' },
+            { className: 'col-sm-3' },
             _react2.default.createElement(_PortfolioItem2.default, { href: 'http://startupchile.org', imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/startupchile.png' })
           ),
           _react2.default.createElement(
             'div',
-            { className: 'col-md-3' },
+            { className: 'col-sm-3' },
             _react2.default.createElement(_PortfolioItem2.default, { href: 'http://zaetae.com', imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/zaetae.png' })
           ),
           _react2.default.createElement(
             'div',
-            { className: 'col-md-3' },
+            { className: 'col-sm-3' },
             _react2.default.createElement(_PortfolioItem2.default, { href: 'http://sohumblee.com', imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/humblee.png' })
           )
         ),
@@ -14900,10 +14900,10 @@ var Portfolio = function (_Component) {
         ),
         _react2.default.createElement(
           'div',
-          { className: 'portfolio__row' },
+          { className: 'row portfolio__row' },
           _react2.default.createElement(
             'div',
-            { className: 'col-md-4' },
+            { className: 'col-sm-4' },
             _react2.default.createElement(
               'div',
               { className: 'portfolio__service' },
@@ -14917,7 +14917,7 @@ var Portfolio = function (_Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'col-md-4' },
+            { className: 'col-sm-4' },
             _react2.default.createElement(
               'div',
               { className: 'portfolio__service' },
@@ -14931,7 +14931,7 @@ var Portfolio = function (_Component) {
           ),
           _react2.default.createElement(
             'div',
-            { className: 'col-md-4' },
+            { className: 'col-sm-4' },
             _react2.default.createElement(
               'div',
               { className: 'portfolio__service' },
@@ -14980,25 +14980,25 @@ var Portfolio = function (_Component) {
         ),
         _react2.default.createElement(
           'div',
-          { className: 'portfolio__row' },
+          { className: 'row portfolio__clients' },
           _react2.default.createElement(
             'div',
-            { className: 'col-md-3' },
+            { className: 'col-sm-3' },
             _react2.default.createElement(_PortfolioItem2.default, { href: 'http://llnl.gov/', imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/llnl.png' })
           ),
           _react2.default.createElement(
             'div',
-            { className: 'col-md-3' },
+            { className: 'col-sm-3' },
             _react2.default.createElement(_PortfolioItem2.default, { href: 'http://wolorewards.com', imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/wolo.png' })
           ),
           _react2.default.createElement(
             'div',
-            { className: 'col-md-3' },
+            { className: 'col-sm-3' },
             _react2.default.createElement(_PortfolioItem2.default, { href: 'http://wintick.com', imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/ablesys.png' })
           ),
           _react2.default.createElement(
             'div',
-            { className: 'col-md-3' },
+            { className: 'col-sm-3' },
             _react2.default.createElement(_PortfolioItem2.default, { href: 'http://stayawhile.com', imgPath: 'https://s3-us-west-1.amazonaws.com/nomadwong-photos/stayawhile.png' })
           )
         ),
@@ -15344,7 +15344,7 @@ exports = module.exports = __webpack_require__(16)();
 
 
 // module
-exports.push([module.i, ".hidden {\n  display: none; }\n\nhtml, body {\n  margin: 0;\n  width: 100%;\n  height: 100%;\n  font-family: \"Proxima Nova\", \"Open Sans\", \"Helvetica\", sans-serif; }\n\n* {\n  box-sizing: border-box !important; }\n\n.align-center {\n  text-align: center; }\n", ""]);
+exports.push([module.i, ".hidden {\n  display: none; }\n\nhtml, body {\n  margin: 0;\n  width: 100%;\n  height: 100%;\n  font-family: \"Proxima Nova\", \"Open Sans\", \"Helvetica\", sans-serif;\n  overflow-x: hidden; }\n\n* {\n  box-sizing: border-box !important; }\n\n.align-center {\n  text-align: center; }\n", ""]);
 
 // exports
 
@@ -15428,7 +15428,7 @@ exports = module.exports = __webpack_require__(16)();
 
 
 // module
-exports.push([module.i, ".hidden {\n  display: none; }\n\n.portfolio__client {\n  background: #eee;\n  width: 100%;\n  border-radius: 3px;\n  display: flex;\n  justify-content: center; }\n  .portfolio__client:not(:first-child) {\n    margin-left: 40px; }\n  .portfolio__client__img {\n    width: 100%;\n    height: 150px;\n    padding: 10px; }\n  .portfolio__client__h1 {\n    font-size: 16px;\n    font-family: 'Open Sans';\n    font-weight: 400;\n    color: #4A4A4A; }\n  .portfolio__client__placeholder {\n    font-size: 100px;\n    color: #fff;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    background: #eee;\n    border-radius: 3px;\n    height: 150px;\n    animation: portfolio-loading 0.5s infinite; }\n\n@keyframes portfolio-loading {\n  0% {\n    opacity: 1; }\n  50% {\n    opacity: 0.6; }\n  100% {\n    opacity: 1; } }\n", ""]);
+exports.push([module.i, ".hidden {\n  display: none; }\n\n.portfolio__client {\n  background: #eee;\n  width: 100%;\n  border-radius: 3px;\n  display: flex;\n  justify-content: center; }\n  .portfolio__client__img {\n    width: 100%;\n    height: auto;\n    padding: 10px; }\n  .portfolio__client__h1 {\n    font-size: 16px;\n    font-family: 'Open Sans';\n    font-weight: 400;\n    color: #4A4A4A; }\n  .portfolio__client__placeholder {\n    font-size: 100px;\n    color: #fff;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    background: #eee;\n    border-radius: 3px;\n    height: auto;\n    width: 100%;\n    animation: portfolio-loading 0.5s infinite; }\n\n@keyframes portfolio-loading {\n  0% {\n    opacity: 1; }\n  50% {\n    opacity: 0.6; }\n  100% {\n    opacity: 1; } }\n\n@media screen and (min-width: 1px) and (max-width: 767px) {\n  body .portfolio__client {\n    background: #fff; }\n    body .portfolio__client__img {\n      background: #fff; }\n  body .portfolio__expertise__img-container {\n    padding: 20px; } }\n", ""]);
 
 // exports
 
@@ -15442,7 +15442,7 @@ exports = module.exports = __webpack_require__(16)();
 
 
 // module
-exports.push([module.i, ".hidden {\n  display: none; }\n\n.portfolio {\n  padding: 100px 40px 0 40px;\n  max-width: 1200px;\n  margin: 0 auto; }\n  .portfolio__h1 {\n    font-size: 16px;\n    text-transform: uppercase;\n    font-weight: 600;\n    color: #4990E2;\n    margin: 40px 0 15px 0; }\n  .portfolio__row {\n    display: flex;\n    justify-content: center;\n    margin-bottom: 60px; }\n  .portfolio__client {\n    background: #eee;\n    width: 100%;\n    border-radius: 3px; }\n    .portfolio__client:not(:first-child) {\n      margin-left: 40px; }\n    .portfolio__client__img {\n      width: 100%;\n      height: 150px;\n      padding: 10px; }\n    .portfolio__client__h1 {\n      font-size: 16px;\n      font-family: 'Open Sans';\n      font-weight: 400;\n      color: #4A4A4A; }\n  .portfolio__service {\n    width: 100%; }\n    .portfolio__service:not(:first-child) {\n      margin-left: 40px; }\n    .portfolio__service__img {\n      width: 100%;\n      height: 180px;\n      border-radius: 3px;\n      background-size: cover; }\n    .portfolio__service__h1 {\n      font-size: 16px;\n      font-family: 'Open Sans';\n      font-weight: 400;\n      color: #4A4A4A; }\n  .portfolio__expertise {\n    border-radius: 3px;\n    width: 100%;\n    height: 120px;\n    color: #fff;\n    margin-bottom: 80px;\n    padding: 10px;\n    display: flex;\n    justify-content: center; }\n    .portfolio__expertise__h2 {\n      font-size: 16px;\n      margin-right: 20px; }\n    .portfolio__expertise__p {\n      text-align: left; }\n    .portfolio__expertise__body {\n      text-align: right; }\n    .portfolio__expertise__img-container {\n      flex-grow: 1;\n      display: flex;\n      justify-content: center;\n      height: 100%; }\n    .portfolio__expertise__img {\n      height: 100%; }\n  .portfolio__recommendation {\n    background: #4A4A4A;\n    border-radius: 3px;\n    width: 100%;\n    height: 120px;\n    color: #fff;\n    margin-bottom: 30px;\n    padding: 10px; }\n    .portfolio__recommendation__h2 {\n      font-size: 16px;\n      margin-right: 20px; }\n    .portfolio__recommendation__p {\n      text-align: left;\n      font-style: italic; }\n    .portfolio__recommendation__body {\n      text-align: right; }\n    .portfolio__recommendation__img {\n      height: 100%;\n      border-radius: 50%;\n      float: left;\n      margin-right: 20px; }\n\n@media screen and (min-width: 1px) and (max-width: 590px) {\n  body .portfolio {\n    padding: 100px 10px 0 10px; }\n    body .portfolio__h1 {\n      margin: 15px 0; } }\n", ""]);
+exports.push([module.i, ".hidden {\n  display: none; }\n\n.portfolio {\n  padding: 100px 40px 0 40px;\n  max-width: 1200px;\n  margin: 0 auto; }\n  .portfolio__h1 {\n    font-size: 16px;\n    text-transform: uppercase;\n    font-weight: 600;\n    color: #4990E2;\n    margin: 40px 0 15px 0; }\n  .portfolio__row {\n    margin-bottom: 60px;\n    width: calc(100% + 50px);\n    margin-left: -25px; }\n  .portfolio__clients {\n    width: calc(100% + 50px);\n    margin-left: -25px; }\n  .portfolio__service {\n    width: 100%; }\n    .portfolio__service:not(:first-child) {\n      margin-left: 40px; }\n    .portfolio__service__img {\n      width: 100%;\n      height: 180px;\n      border-radius: 3px;\n      background-size: cover; }\n    .portfolio__service__h1 {\n      font-size: 16px;\n      font-family: 'Open Sans';\n      font-weight: 400;\n      color: #4A4A4A; }\n  .portfolio__expertise {\n    border-radius: 3px;\n    width: 100%;\n    height: 120px;\n    color: #fff;\n    margin-bottom: 80px;\n    padding: 10px;\n    display: flex;\n    justify-content: center; }\n    .portfolio__expertise__h2 {\n      font-size: 16px;\n      margin-right: 20px; }\n    .portfolio__expertise__p {\n      text-align: left; }\n    .portfolio__expertise__body {\n      text-align: right; }\n    .portfolio__expertise__img-container {\n      flex-grow: 1;\n      display: flex;\n      justify-content: center;\n      height: 100%; }\n    .portfolio__expertise__img {\n      height: 100%; }\n  .portfolio__recommendation {\n    background: #4A4A4A;\n    border-radius: 3px;\n    width: 100%;\n    height: 120px;\n    color: #fff;\n    margin-bottom: 30px;\n    padding: 10px; }\n    .portfolio__recommendation__h2 {\n      font-size: 16px;\n      margin-right: 20px; }\n    .portfolio__recommendation__p {\n      text-align: left;\n      font-style: italic; }\n    .portfolio__recommendation__body {\n      text-align: right; }\n    .portfolio__recommendation__img {\n      height: 100%;\n      border-radius: 50%;\n      float: left;\n      margin-right: 20px; }\n\n@media screen and (min-width: 1px) and (max-width: 590px) {\n  body .portfolio {\n    padding: 100px 10px 0 10px; }\n    body .portfolio__h1 {\n      margin: 15px 0; } }\n", ""]);
 
 // exports
 

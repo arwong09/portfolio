@@ -14,32 +14,16 @@
   }
 
   &__row {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     margin-bottom: 60px;
+    width: calc(100% + 50px);
+    margin-left: -25px;
   }
 
-  &__client {
-    background: #eee;
-    width: 100%;
-    border-radius: 3px;
-
-    &:not(:first-child) {
-      margin-left: 40px;
-    }
-
-    &__img {
-      width: 100%;
-      height: 150px;
-      padding: 10px;
-    }
-
-    &__h1 {
-      font-size: 16px;
-      font-family: 'Open Sans';
-      font-weight: 400;
-      color: $black;
-    }
+  &__clients {
+    width: calc(100% + 50px);
+    margin-left: -25px;
   }
 
   &__service {

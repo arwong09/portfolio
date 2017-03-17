@@ -35,12 +35,6 @@
   padding-left: 25px;
   padding-right: 25px;
 }
-.col-md-3:first-child, .col-md-4:first-child {
-  padding-left: 0;
-}
-.col-md-3:last-child, .col-md-4:last-child {
-  padding-right: 0;
-}
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
 }
