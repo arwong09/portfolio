@@ -1,18 +1,28 @@
 import style from './feed.scss'
 import React, { Component } from 'react'
+import store from 'redux/store.js'
+import { itemLoaded } from 'redux/actions'
 import FeedItem from './components/FeedItem/FeedItem.jsx'
 import LoadingItem from './components/LoadingItem/LoadingItem.jsx'
 
 export default class Feed extends Component {
   constructor(props) {
     super(props)
-    this.state = { loadedItems: [] }
+    this.state = store.getState().loadedItems
+  }
+
+  componentDidMount() {
+    this.unsubscribe = store.subscribe(() => {
+      this.setState(store.getState().loadedItems)
+    })
+  }
+
+  componentWillUnmount() {
+    this.unsubscribe()
   }
 
   onLoad(feedItem) {
-    this.setState(({ loadedItems }) => {
-      return { loadedItems: loadedItems.concat(feedItem) }
-    })
+    store.dispatch(itemLoaded(feedItem))
   }
 
   render() {
