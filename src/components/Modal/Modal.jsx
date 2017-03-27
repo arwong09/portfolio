@@ -1,6 +1,8 @@
 import style from './modal-style.scss'
 import React, { Component } from 'react'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
+import store from 'redux/store'
+import { renderModal } from 'redux/actions'
 
 export default class Modal extends Component {
   constructor(props) {
@@ -9,7 +11,7 @@ export default class Modal extends Component {
   }
 
   handleClick() {
-    this.props.renderModal(null)
+    store.dispatch(renderModal(null))
   }
 
   render() {

@@ -1,6 +1,7 @@
 import style from './index.scss'
 import React, { Component, cloneElement } from 'react'
 import { PORTFOLIO } from 'data/items.js'
+import store from 'redux/store'
 import Feed from 'components/Feed/Feed.jsx'
 import Modal from 'components/Modal/Modal.jsx'
 import Nav from 'views/Index/components/Nav/Nav.jsx'
@@ -10,12 +11,17 @@ import Footer from 'views/Index/components/Footer/Footer.jsx'
 export default class Index extends Component {
   constructor(props) {
     super(props)
-    this.state = { modalContent: null }
-    this.renderModal = this.renderModal.bind(this)
+    this.state = store.getState().modalContent
   }
 
-  renderModal(modalContent) {
-    this.setState({ modalContent: modalContent })
+  componentDidMount() {
+    this.unsubscribe = store.subscribe(() => {
+      this.setState(store.getState().modalContent)
+    })
+  }
+
+  componentWillUnmount() {
+    this.unsubscribe()
   }
 
   render() {

@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import { ITEM_LOADED } from './actions.js'
+import { ITEM_LOADED, RENDER_MODAL } from './actions.js'
 
 function loadedItems(state = { loadedItems: [] }, action) {
   switch(action.type) {
@@ -10,5 +10,14 @@ function loadedItems(state = { loadedItems: [] }, action) {
   }
 }
 
-const App = combineReducers({ loadedItems })
+function modalContent(state = {}, action) {
+  switch(action.type) {
+    case RENDER_MODAL:
+      return { modalContent: action.payload }
+    default:
+      return state
+  }
+}
+
+const App = combineReducers({ loadedItems, modalContent })
 export default App
